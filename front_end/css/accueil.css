@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face
+{
+    font-family: "Advent Pro";
+    src: url("../police/AdventPro-Bold.ttf");
+}
+
+.titre0
+{
+    width: 100%;
+    height: 10vh;
+    color: #7289da;
+    background-color: #0C0C0C;
+    border-bottom: 1px solid #99aab5;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    
+}
+
+.titre0lscriminal
+{
+    font-family: "Advent Pro", "Arial Black";
+    color: #1cceff;
+    opacity: 0.8;
+    
+}
+
+.titre0lscriminal:hover
+{
+    font-family: "Advent Pro", "Arial Black";
+    color: #1cceff;
+    opacity: 1;
+    
+}
+
+.titre0lscriminal:hover
+{
+    font-size: 25px;
+    font-family: "Advent Pro", "Arial Black";
+    color: #1cceff;
+    opacity: 0.9;
+    
+}
+
+.titre0link {
+    text-decoration: none;
+
+}
+
+.c-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.l-social {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+
+}
+
+
+
+img.logo0
+{
+    width : 55px; 
+    opacity: 0.9;
+    margin-left: 40px;
+    
+}
+
+.logo0:hover
+{
+    opacity: 1;
+    margin-left: 40px;
+}
+
+.twitch
+{
+
+    opacity: 0.5;
+    width : 35px; 
+}
+
+.youtube
+{
+    margin-right: 35px;
+    margin-left: 35px;
+    opacity: 0.5;
+    width : 35px; 
+}
+
+.twitter
+{
+    margin-right: 35px;
+    opacity: 0.5;
+    width : 35px; 
+}
+
+.instagram
+{
+    margin-right: 45px;
+    opacity: 0.5;
+    width : 35px; 
+}
+
+.twitch:hover
+{
+    opacity: 1;
+    width : 35px; 
+}
+
+.youtube:hover
+{
+    opacity: 1;
+    width : 35px; 
+}
+
+.twitter:hover
+{
+    opacity: 1;
+    width : 35px; 
+}
+
+.instagram:hover
+{
+    opacity: 1;
+    width : 35px; 
+}
+
+.background {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../image/LS_Criminal_Image.png");
+    background-position: center;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.fondaccueil {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #0C0C0C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.bienvenu
+{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    color: #7289da;
+    background-color: #131313;
+    opacity: 0.8;
+    border-bottom: 1px solid #99aab5;
+}
+
+.bienvenu:hover
+{
+    width: 100%;
+    height: 500px;
+    color: #7289da;
+    background-color: #131313;
+    opacity: 1;
+    border-right: 1px solid #99aab5;
+    border-left: 1px solid #99aab5;
+    border-top: 1px solid #99aab5;
+}
+
+.text {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bienvenutitre
+{
+    font-family: "Advent Pro", "Arial Black";
+    font-size: 35px;
+    color: #1cceff;
+    position: static;
+}
+
+.bienvenutext
+{
+    font-family: "Arial";
+    font-size: 16px;
+    color: white;
+    position: static;
+}
+
+.nousvous {
+    font-family: "Arial";
+    font-size: 16px;
+    color: white;
+    position: static;
+}
+
+.boutton {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bouttonwl {
+    font-family: "Advent Pro", "Arial Black";
+    position: static;
+    width: 125px;
+    height: 40px;
+    background: linear-gradient(45deg, #44A0B6, #22515C);
+    border-radius: 20px;
+    color: #FFF;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    opacity: 0.5;
+    margin-right: 100px;
+}
+
+.bouttondiscord {
+    font-family: "Advent Pro", "Arial Black";
+    position: static;
+    width: 125px;
+    height: 40px;
+    background: linear-gradient(45deg, #44A0B6, #22515C);
+    border-radius: 20px;
+    color: #FFF;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    opacity: 0.5;
+}
+
+.bouttonwl:hover {
+    font-family: "Advent Pro", "Arial Black";
+    position: static;
+    width: 125px;
+    height: 40px;
+    background: linear-gradient(45deg, #44A0B6, #22515C);
+    border-radius: 20px;
+    color: #FFF;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    opacity: 1;
+}
+
+.bouttondiscord:hover {
+    font-family: "Advent Pro", "Arial Black";
+    position: static;
+    width: 125px;
+    height: 40px;
+    background: linear-gradient(45deg, #44A0B6, #22515C);
+    border-radius: 20px;
+    color: #FFF;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    opacity: 1;
+}
+
+
+

@@ -1,0 +1,674 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face
+{
+    font-family: "Advent Pro";
+    src: url("../police/AdventPro-Bold.ttf");
+}
+
+
+   
+@font-face
+{ 
+    font-family: "Metropolis";
+    src: url("../police/Metropolis-Light.otf");
+}
+
+input
+{
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.titre0
+{
+    width: 100%;
+    height: 10vh;
+    color: #7289da;
+    background-color: #0C0C0C;
+    border-bottom: 1px solid #99aab5;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    
+}
+
+.titre0lscriminal
+{
+    font-family: "Advent Pro", "Arial Black";
+    color: #1cceff;
+    opacity: 0.8;
+    font-size: 22px;
+    
+}
+
+.titre0lscriminal:hover
+{
+    font-family: "Advent Pro", "Arial Black";
+    color: #1cceff;
+    opacity: 1;
+    font-size: 23px;
+    
+}
+
+.titre0lscriminal:hover
+{
+    font-size: 25px;
+    font-family: "Advent Pro", "Arial Black";
+    color: #1cceff;
+    opacity: 0.9;
+    
+}
+
+.titre0link {
+    text-decoration: none;
+
+}
+
+.c-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.l-social {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+
+}
+
+
+
+img.logo0
+{
+    width : 55px; 
+    opacity: 0.9;
+    margin-left: 40px;
+    
+}
+
+.logo0:hover
+{
+    opacity: 1;
+    margin-left: 40px;
+}
+
+.twitch
+{
+
+    opacity: 0.5;
+    width : 35px; 
+}
+
+.youtube
+{
+    margin-right: 35px;
+    margin-left: 35px;
+    opacity: 0.5;
+    width : 35px; 
+}
+
+.twitter
+{
+    margin-right: 35px;
+    opacity: 0.5;
+    width : 35px; 
+}
+
+.instagram
+{
+    margin-right: 45px;
+    opacity: 0.5;
+    width : 35px; 
+}
+
+.twitch:hover
+{
+    opacity: 1;
+    width : 35px; 
+}
+
+.youtube:hover
+{
+    opacity: 1;
+    width : 35px; 
+}
+
+.twitter:hover
+{
+    opacity: 1;
+    width : 35px; 
+}
+
+.instagram:hover
+{
+    opacity: 1;
+    width : 35px; 
+}
+
+
+.background {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #131313;
+    background-size: 100%;
+
+}
+
+.fondnavcote
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: fixed;
+    background-color: #0C0C0C;
+    width: 20%;
+    height: 100%;
+    top: 10vh;
+    z-index: 1;
+    border-right: 1px solid #99aab5;
+}
+
+.listepucenav
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Advent Pro", "Arial Black";
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    font-size: 150%;
+    background-color: #0C0C0C;
+    width: 100%;
+    height: 40%;
+}
+
+.monprofil
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden;
+    z-index: 3;
+    text-decoration: none;
+    border-bottom: 1px solid #99aab5;
+    color: white;
+    list-style-type: none;
+    width: 100%;
+    height: 33.3%;
+}
+
+.monprofil:hover
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden;
+    z-index: 3;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    background-color: #1cceff;
+    width: 100%;
+    height: 33.3%;
+}
+
+.monprofillien
+{
+    text-decoration: none;
+    color: white;
+}
+
+.logoprofil
+{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.questionnaire
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden; 
+    z-index: 4;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    border-bottom: 1px solid #99aab5;
+    width: 100%;
+    height: 33.3%;
+}
+
+.questionnaire:hover
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden; 
+    z-index: 4;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    background-color: #1cceff;
+    border-bottom: 1px solid #99aab5;
+    width: 100%;
+    height: 33.3%;
+}
+
+.questionnairelien
+{
+    text-decoration: none;
+    color: white;
+}
+
+.logoquestionnaire
+{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.dossier
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden; 
+    z-index: 4;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    border-bottom: 1px solid #99aab5;
+    width: 100%;
+    height: 33.3%;
+}
+
+.dossier:hover
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden; 
+    z-index: 4;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    background-color: #1cceff;
+    border-bottom: 1px solid #99aab5;
+    width: 100%;
+    height: 33.3%;
+}
+
+.dossierlien
+{
+    text-decoration: none;
+    color: white;
+}
+
+.logodossier
+{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.besoindaide
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden;
+    z-index: 5;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    border-bottom: 1px solid #99aab5;
+    width: 100%;
+    height: 33.3%;
+}
+
+.besoindaide:hover
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden;
+    z-index: 5;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    background-color: #1cceff;
+    border-bottom: 1px solid #99aab5;
+    width: 100%;
+    height: 33.3%;
+}
+
+.besoindaidelien
+{
+    text-decoration: none;
+    color: white;
+}
+
+.logobesoindaide
+{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.centrage {
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    left: 20%;
+    top: 10vh;
+}
+
+.etapes
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    font-family: "Advent Pro", "Arial Black";
+    overflow: hidden;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    list-style-type: none;
+    width: 25%;
+    height: 25%;
+    margin-left: 5%;
+    margin-top: 2%;
+    background-color: #1d1d1d;
+    box-shadow: 1px 1px 4px 1px #1cceff;
+}
+
+.titreetapes
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    font-size: 45%;
+    z-index: 105;
+    background-color: #0C0C0C;
+    border-bottom: 0.1px solid #1cceff;
+    height: 20%;
+    width: 100%;
+}
+
+.lierdiscord
+{
+    font-family: "Metropolis", "Arial Black";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 1px 1px 1px 1px #4c88b1;
+    color: white;
+    font-size: 50%;
+    z-index: 100;
+    height: 20%;
+    width: 100%;
+    padding-left: 10%;
+}
+
+.lierdiscord:hover
+{
+    font-family: "Metropolis", "Arial Black";
+    display: flex;
+    align-items: center;
+    position: static;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    font-size: 51%;
+    z-index: 100;
+    background-color: #1cceff;
+    height: 20%;
+    width: 100%;
+}
+
+.lierdiscordlien
+{
+    text-decoration: none;
+    color: white;
+}
+
+.logoloading1
+{
+    position: static;
+    width: 20px;
+    height: 20px;
+    margin-left: 25px;
+}
+
+.fairequestionnaire
+{
+    font-family: "Metropolis", "Arial Black";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 1px 1px 1px 1px #4c88b1;
+    color: white;
+    font-size: 50%;
+    z-index: 100;
+    height: 20%;
+    width: 100%;
+    padding-left: 10%;
+}
+
+.fairequestionnaire:hover
+{
+    font-family: "Metropolis", "Arial Black";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    font-size: 51%;
+    z-index: 100;
+    background-color: #1cceff;
+    height: 20%;
+    width: 100%;
+    padding-left: 10%;
+}
+
+.fairequestionnairelien
+{
+    text-decoration: none;
+    color: white;
+}
+
+.logoloading2
+{
+    position: static;
+    width: 20px;
+    height: 20px;
+    margin-left: 25px;
+}
+
+.saisirdossier
+{
+    font-family: "Metropolis", "Arial Black";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 1px 1px 1px 1px #4c88b1;
+    color: white;
+    font-size: 50%;
+    z-index: 100;
+    height: 20%;
+    width: 100%;
+    padding-left: 16%;
+}
+
+.saisirdossier:hover
+{
+    font-family: "Metropolis", "Arial Black";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    font-size: 51%;
+    z-index: 100;
+    background-color: #1cceff;
+    height: 20%;
+    width: 100%;
+    padding-left: 16%;
+}
+
+.saisirdossierlien
+{
+    text-decoration: none;
+    color: white;
+}
+
+.logoloading3
+{
+    position: static;
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+}
+
+.rolediscord
+{
+    font-family: "Metropolis", "Arial Black";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 1px 1px 1px 1px #4c88b1;
+    color: white;
+    font-size: 50%;
+    z-index: 100;
+    height: 20%;
+    width: 100%;
+    padding-left: 10%;
+}
+
+.rolediscord:hover
+{
+    font-family: "Metropolis", "Arial Black";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    font-size: 51%;
+    z-index: 100;
+    background-color: #1cceff;
+    height: 20%;
+    width: 100%;
+    padding-left: 10%;
+}
+
+.rolediscordlien
+{
+    text-decoration: none;
+    color: white;
+}
+
+.logoloading4
+{
+    position: static;
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+}
+
+.question1
+{
+    position: static;
+    color: white;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+    height: 23%;
+    font-size: 85%;
+    font-family: 'Metropolis';
+    background-color: #2E2E2E;
+    box-shadow: 1px 1px 3px 1px #1cceff;
+    padding: 10px 0px 10px 25px;
+    margin-left: 35%;
+    margin-top: 2%;
+}
+
+.ecriturequestion1
+{
+    overflow: hidden;
+    font-size: 90%;
+    font-family: 'Metropolis';
+    color: #1cceff;
+}
+
+.margeetape {
+    margin-left: 25px;
+}
+
+.couleuralerte {
+    margin-left: 25px;
+    color: rgb(255, 62, 62);
+}

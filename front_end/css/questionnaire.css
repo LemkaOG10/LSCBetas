@@ -1,0 +1,712 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face
+{
+    font-family: "Advent Pro";
+    src: url("../police/AdventPro-Bold.ttf");
+}
+   
+@font-face
+{ 
+    font-family: "Metropolis";
+    src: url("../police/Metropolis-Light.otf");
+}
+
+input
+{
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+
+.titre0
+{
+    width: 100%;
+    height: 10vh;
+    color: #7289da;
+    background-color: #0C0C0C;
+    border-bottom: 1px solid #99aab5;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 20;
+    overflow: hidden;
+}
+
+.titre0lscriminal
+{
+    font-family: "Advent Pro", "Arial Black";
+    color: #1cceff;
+    opacity: 0.6;
+    
+}
+
+.titre0lscriminal:hover
+{
+    font-family: "Advent Pro", "Arial Black";
+    color: #1cceff;
+    opacity: 1;
+    
+}
+
+.bienvenutitre
+{
+    font-family: "Advent Pro", "Arial Black";
+    font-size: 25px;
+    color: #1cceff;
+    position: fixed;
+    margin-top: 50px;
+}
+
+.bienvenutext
+{
+    font-family: "Arial";
+    font-size: 12px;
+    color: white;
+    position: fixed;
+    margin-top: 75px;
+}
+
+.bienvenu
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 60vh;
+    color: #7289da;
+    background-color: #0C0C0C;
+    opacity: 0.8;
+    border-bottom: 1px solid #99aab5;
+    position: fixed;
+    margin-left: 37%;
+    margin-top: 750px;
+}
+
+.bienvenu:hover
+{
+    width: 350px;
+    height: 60vh;
+    color: #7289da;
+    background-color: #0C0C0C;
+    opacity: 1;
+    border-right: 1px solid #99aab5;
+    border-left: 1px solid #99aab5;
+    border-top: 1px solid #99aab5;
+    position: fixed;
+    margin-left: 37%;
+    margin-top: 750px;
+}
+
+.bouttonwl {
+    font-family: "Advent Pro", "Arial Black";
+    position: absolute;
+    width: 125px;
+    height: 40px;
+    background: linear-gradient(45deg, #44A0B6, #22515C);
+    border-radius: 20px;
+    color: #FFF;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    margin-top: 360px;
+    margin-left: -150px;
+    opacity: 0.5;
+}
+
+.bouttondiscord {
+    font-family: "Advent Pro", "Arial Black";
+    position: absolute;
+    width: 125px;
+    height: 40px;
+    background: linear-gradient(45deg, #44A0B6, #22515C);
+    border-radius: 20px;
+    color: #FFF;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    margin-top: 250px;
+    margin-left: -150px;
+    opacity: 0.5;
+}
+
+.bouttonwl:hover {
+    font-family: "Advent Pro", "Arial Black";
+    position: absolute;
+    width: 125px;
+    height: 40px;
+    background: linear-gradient(45deg, #44A0B6, #22515C);
+    border-radius: 20px;
+    color: #FFF;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    margin-top: 360px;
+    margin-left: -150px;
+    opacity: 1;
+}
+
+.bouttondiscord:hover {
+    font-family: "Advent Pro", "Arial Black";
+    position: absolute;
+    width: 125px;
+    height: 40px;
+    background: linear-gradient(45deg, #44A0B6, #22515C);
+    border-radius: 20px;
+    color: #FFF;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    margin-top: 250px;
+    margin-left: -150px;
+    opacity: 1;
+}
+
+.nousespace
+{
+    font-family: "Arial";
+    font-size: 12px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 275px;
+}
+
+.titre0lscriminal:hover
+{
+    font-size: 25px;
+    font-family: "Advent Pro", "Arial Black";
+    color: #1cceff;
+    opacity: 0.9;
+    
+}
+
+.titre0link {
+    text-decoration: none;
+
+}
+
+.c-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.l-social {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+
+}
+
+
+
+img.logo0
+{
+    width : 55px; 
+    opacity: 0.9;
+    margin-left: 40px;
+    
+}
+
+.logo0:hover
+{
+    opacity: 1;
+    margin-left: 40px;
+}
+
+.twitch
+{
+
+    opacity: 0.5;
+    width : 35px; 
+}
+
+.youtube
+{
+    margin-right: 35px;
+    margin-left: 35px;
+    opacity: 0.5;
+    width : 35px; 
+}
+
+.twitter
+{
+    margin-right: 35px;
+    opacity: 0.5;
+    width : 35px; 
+}
+
+.instagram
+{
+    margin-right: 45px;
+    opacity: 0.5;
+    width : 35px; 
+}
+
+.twitch:hover
+{
+    opacity: 1;
+    width : 35px; 
+}
+
+.youtube:hover
+{
+    opacity: 1;
+    width : 35px; 
+}
+
+.twitter:hover
+{
+    opacity: 1;
+    width : 35px; 
+}
+
+.instagram:hover
+{
+    opacity: 1;
+    width : 35px; 
+}
+
+.background {
+    position: fixed;
+    background-color: #131313;
+    height: 100%;
+    width: 100%;
+}
+
+.fondnavcote
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: fixed;
+    background-color: #0C0C0C;
+    width: 20%;
+    height: 100%;
+    top: 10vh;
+    z-index: 1;
+    border-right: 1px solid #99aab5;
+}
+
+.listepucenav
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Advent Pro", "Arial Black";
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    font-size: 150%;
+    background-color: #0C0C0C;
+    width: 100%;
+    height: 40%;
+}
+
+.monprofil
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden;
+    z-index: 3;
+    text-decoration: none;
+    border-bottom: 1px solid #99aab5;
+    color: white;
+    list-style-type: none;
+    width: 100%;
+    height: 33.3%;
+}
+
+.monprofil:hover
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden;
+    z-index: 3;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    background-color: #1cceff;
+    width: 100%;
+    height: 33.3%;
+}
+
+.monprofillien
+{
+    text-decoration: none;
+    color: white;
+}
+
+.logoprofil
+{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.questionnaire
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden; 
+    z-index: 4;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    border-bottom: 1px solid #99aab5;
+    border-left: 15px solid #1cceff;
+    width: 100%;
+    height: 33.3%;
+}
+
+.questionnaire:hover
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden; 
+    z-index: 4;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    background-color: #1cceff;
+    border-bottom: 1px solid #99aab5;
+    width: 100%;
+    height: 33.3%;
+}
+
+.questionnairelien
+{
+    text-decoration: none;
+    color: white;
+}
+
+.logoquestionnaire
+{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.dossier
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden; 
+    z-index: 4;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    border-bottom: 1px solid #99aab5;
+    width: 100%;
+    height: 33.3%;
+}
+
+.dossier:hover
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden; 
+    z-index: 4;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    background-color: #1cceff;
+    border-bottom: 1px solid #99aab5;
+    width: 100%;
+    height: 33.3%;
+}
+
+.dossierlien
+{
+    text-decoration: none;
+    color: white;
+}
+
+.logodossier
+{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.besoindaide
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden;
+    z-index: 5;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    border-bottom: 1px solid #99aab5;
+    width: 100%;
+    height: 33.3%;
+}
+
+.besoindaide:hover
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    overflow: hidden;
+    z-index: 5;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    background-color: #1cceff;
+    border-bottom: 1px solid #99aab5;
+    width: 100%;
+    height: 33.3%;
+}
+
+.besoindaidelien
+{
+    text-decoration: none;
+    color: white;
+}
+
+.logobesoindaide
+{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.fondformulaire
+{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 20%;
+}
+
+.Englobequestion
+{
+    position: static;
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+    width: 75%;
+    height: 75%;
+    margin-left: 25px;
+}
+
+.ecriturequestion1
+{
+    overflow: hidden;
+    font-size: 90%;
+    font-family: 'Metropolis';
+    color: #1cceff;
+}
+
+.question1
+{
+    position: static;
+    color: white;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45%;
+    height: 25%;
+    font-size: 85%;
+    font-family: 'Metropolis';
+    background-color: #2E2E2E;
+    box-shadow: 1px 1px 1px black; 
+    padding: 10px 0px 10px 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.ecriturequestion2
+{
+
+    font-size: 90%;
+    font-family: 'Metropolis';
+    color: #1cceff;
+}
+
+.question2
+{
+    position: static;
+    color: white;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45%;
+    height: 25%;
+    font-size: 85%;
+    font-family: 'Metropolis';
+    background-color: #2E2E2E;
+    box-shadow: 1px 1px 1px black; 
+    padding: 10px 0px 10px 25px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.ecriturequestion3
+{
+
+    font-size: 90%;
+    font-family: 'Metropolis';
+    color: #1cceff;
+}
+
+.question3
+{
+    position: static;
+    color: white;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45%;
+    height: 25%;
+    font-size: 85%;
+    font-family: 'Metropolis';
+    background-color: #2E2E2E;
+    box-shadow: 1px 1px 1px black; 
+    padding: 10px 0px 10px 25px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.ecriturequestion4
+{
+
+    font-size: 90%;
+    font-family: 'Metropolis';
+    color: #1cceff;
+}
+
+.question4
+{
+    position: static;
+    color: white;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45%;
+    height: 25%;
+    font-size: 85%;
+    font-family: 'Metropolis';
+    background-color: #2E2E2E;
+    box-shadow: 1px 1px 1px black; 
+    padding: 10px 0px 10px 25px;
+}
+
+.ecriturequestion5
+{
+
+    font-size: 90%;
+    font-family: 'Metropolis';
+    color: #1cceff;
+}
+
+.question5
+{
+    position: static;
+    color: white;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45%;
+    height: 25%;
+    font-size: 85%;
+    font-family: 'Metropolis';
+    background-color: #2E2E2E;
+    box-shadow: 1px 1px 1px black; 
+    padding: 10px 0px 10px 25px;
+    margin-top: 25px;
+}
+
+.ecriturequestion6
+{
+
+    font-size: 90%;
+    font-family: 'Metropolis';
+    color: #1cceff;
+}
+
+.question6
+{
+    position: static;
+    color: white;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45%;
+    height: 25%;
+    font-size: 85%;
+    font-family: 'Metropolis';
+    background-color: #2E2E2E;
+    box-shadow: 1px 1px 1px black; 
+    padding: 10px 0px 10px 25px;
+    margin-top: 25px;
+}
+
+.bouttonsuite {
+    font-family: "Advent Pro", "Arial Black";
+    width: 125px;
+    height: 40px;
+    background: linear-gradient(45deg, #44A0B6, #22515C);
+    border-radius: 20px;
+    color: #FFF;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    opacity: 0.5;
+    position: absolute;
+    left: 35%;
+    top: 85%;
+}
+
+.bouttonsuite:hover {
+    font-family: "Advent Pro", "Arial Black";
+    width: 125px;
+    height: 40px;
+    background: linear-gradient(45deg, #44A0B6, #22515C);
+    border-radius: 20px;
+    color: #FFF;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    opacity: 1;
+    position: absolute;
+}
