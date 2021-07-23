@@ -1,0 +1,521 @@
+/*
+==================================================================
+                PAGE DE PROFIL / PARAMÈTRE
+==================================================================
+*/
+
+/* Div qui englobe la div superficielle de la navigation et celle de la page */
+
+.centremilieu {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 64px;
+    z-index: -1;
+    overflow: auto;
+}
+
+.contient_div {
+    display: flex; 
+    justify-content: center;
+    flex-direction: row; 
+    height: 600px; 
+    width: 900px; 
+    padding: 0px; 
+    margin: 0px 35px 0px 35px; 
+    overflow: hidden;
+}
+
+.container_profil_full {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 50px;
+    background-color: #2f3136;
+}
+
+.user_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.user_info {
+    position: static;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.user_avatar {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20%;
+    height: 100%;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+.user_username {
+    position: static;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 30px;
+}
+
+.user_tag {
+    color: #8e9297;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+.container_more {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.background_opacity {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #25282c9f;
+    z-index: 2;
+
+}
+
+.container_change_username, .container_change_password {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    width: 445px;
+    height: 350px;
+    left: 40%;
+    top: 225px;
+    background-color: #414449;
+    border-radius: 10px 10px 0px 0px;
+    z-index: 3;
+}
+
+.container_input_email_change, .container_input_password_change {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.title_change_username {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    color: white;
+    font-weight: bold;
+
+}
+
+.container_close {
+    position: absolute;
+    right: 35px;
+}
+
+.bi-x-lg:hover {
+    color: #ffffff;
+}
+
+.header_container_change_username {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    width: 100%;
+    height: 750px;
+}
+
+.form_change_username {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.container_sup {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.input_email_change, .input_password_change {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#name, #password, #newpassword, #newpassword2 {
+    position: static;
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+    width: 80%;
+    height: 35px;
+    background-color: #303338;
+    border: 1px solid #2e2c2c;
+    border-radius: 5px;
+}
+
+#name:focus, #password:focus { 
+    outline: none !important;
+    border-color: #1cceff;
+}
+
+.change_email_text, .change_password_text {
+    position: static;
+    display: flex;
+    align-items: flex-end;
+    margin: 5px 0px;
+    width: 80%;
+    height: 20px;
+    color: #8e9297;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 46px;
+
+}
+
+.footer_container_change_username {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 95px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #2f3136;
+    text-decoration: none;
+}
+
+.button_change {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #4f545c;
+  opacity: 0.7;
+  font-size: 12px;
+  margin-right: 15px;
+  color: white;
+}
+
+.button_change:hover {
+    opacity: 1;
+}
+
+.annuler {
+    margin: 0px 25px 0px 0px;
+    color: white;
+}
+
+.info_more {
+    display: none;
+    position: absolute;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    left: -30px;
+    font-size: 10px;
+    background-color: #414449;
+}
+
+img.user_avatar_discord {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.user_data {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: #414449;
+}
+
+.user_title {
+    font-weight: bold;
+    margin-left: 25px;
+    color: #8e9297;
+}
+
+.user_text {
+    color: #ffffff;
+}
+
+.child {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin-top: 5px;
+
+}
+
+.container_changed {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 100%;
+    width: 40%;
+}
+
+.button_modified {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 65%;
+    width: 100px;
+    border-radius: 3px;
+    background-color: #4f545c;
+    opacity: 0.7;
+    font-size: 12px;
+}
+
+.button_modified:hover {
+    opacity: 1;
+}
+
+/* Ipad Pro */
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .container_profil_full {
+        width: 100%;
+    }
+
+}
+
+/* Ipad */
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+/* Surface Duo */
+
+@media screen and (max-width: 540px) {
+
+    .contient_div {
+        margin: 0px 10px 0px 0px;
+    }
+
+    .container_profil_full {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 505px) {
+
+}
+
+/* Iphone 6/7/8 Plus & Pixel 2 XL*/
+
+
+@media screen and (max-width: 414px) {
+
+    .user_title {
+        font-size: 14px;
+    }
+    
+    .user_text {
+        font-size: 13px;
+    }
+
+    .button_modified {
+        width: 65px;
+    }
+
+}
+
+/* Iphone X & Iphone 6/7/8 */
+
+@media screen and (max-width: 375px) {
+
+    .user_title {
+        font-size: 14px;
+    }
+    
+    .user_text {
+        font-size: 12px;
+    }
+
+    .button_modified {
+        width: 65px;
+    }
+
+}
+
+/* Moto G4 & Galaxy */
+
+@media screen and (max-width: 360px) {
+
+    .user_title {
+        font-size: 12px;
+    }
+    
+    .user_text {
+        font-size: 10px;
+    }
+
+    .button_modified {
+        width: 55px;
+    }
+
+}
+
+/* Iphone 5/SE */
+
+@media screen and (max-width: 325px) {
+
+    .user_title {
+        font-size: 12px;
+    }
+    
+    .user_text {
+        font-size: 10px;
+    }
+
+    .button_modified {
+        width: 65px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .child {
+        flex-direction: column;
+    }
+
+    .user_title {
+        width: 175px;
+        font-size: 15px;
+    }
+
+    .user_info {
+        height: 20%;
+    }
+
+    .user_text {
+        font-size: 12px;
+    }
+
+    .user_username {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .user_tag {
+        margin: 0;
+        font-size: 10px;
+    }
+
+    .button_modified {
+        height: 30px;
+    }
+
+    img.user_avatar_discord {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .container_profil_full {
+    height: 500px;
+    }
+
+    .container_changed {
+        margin-left: 25px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        justify-content: flex-start;
+        
+    }
+
+    .contient_div {
+        height: 650px; 
+        overflow: hidden;
+    }
+
+}
+
+/* Galaxy Fold */
+
+@media screen and (max-width: 280px) {
+
+
+}
+
+@media screen and (max-width: 255px) {
+
+.user_title {
+    font-size: 10px;
+}
+
+.user_username {
+    margin: 0;
+    font-size: 14px;
+}
+
+.user_tag {
+    margin: 0;
+    font-size: 8px;
+}
+
+}

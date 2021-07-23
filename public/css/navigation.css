@@ -1,0 +1,284 @@
+  /*
+  ==================================================================
+                NAVIGATION SCROLL
+  ==================================================================
+  */
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Déclaration des polices importer */
+  
+  @font-face
+  {
+    font-family: "Advent Pro";
+    src: url("../police/AdventPro-Bold.ttf");
+  }
+   
+  @font-face
+  { 
+    font-family: "Metropolis";
+    src: url("../police/Metropolis-Light.otf");
+  }
+  
+  input
+  {
+    width: 0.8vw;
+    margin-right: 10px;
+    margin-top: 0px;
+  }
+  
+  /* Barre de déroulement customisé */
+  
+  ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  }
+  ::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+  background: #1cceff;
+  border: 31px none red;
+  border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+  background: #1cceff;
+  }
+  ::-webkit-scrollbar-thumb:active {
+  background: #131313;
+  }
+  ::-webkit-scrollbar-track {
+  background: #918989;
+  border: 1px solid #131313;
+  border-radius: 5px;
+  }
+  ::-webkit-scrollbar-track:hover {
+  background: #f2f2f2;
+  }
+  ::-webkit-scrollbar-track:active {
+  background: #f5f5f5;
+  }
+  ::-webkit-scrollbar-corner {
+  background: transparent;
+  }
+  
+  
+  /* Section Background, fond du site */
+  
+  .background {
+    position: fixed;
+    background-color: #131313;
+    height: 100%;
+    width: 100%;
+  }
+
+
+/*
+  ==================================================================
+                NAVIGATION GAUCHE
+  ==================================================================
+  */
+
+.fond_navigation {
+    position: fixed;
+    background-color: #212529;
+    top: 64px;
+    left: 0;
+    height: 100%;
+    width: 237px;
+}
+
+.navigation_complete {
+    position: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    top: 64px;
+    left: 0;
+    height: 100%;
+}
+
+.navigation {
+    position: static;
+    display: flex;
+    flex-direction: row-reverse;
+    border-right: 1px solid black;
+    top: 50px;
+    height: 100%;
+    overflow: auto;
+}
+
+/* Navigation Supérficielle qui se refermera quand la nav se refermera */
+
+.navigation_superficielle {
+    position: static;
+    width: 291px;
+    z-index: 7;
+}
+
+/* Div qui prend toutes la hauteur et permet de déclaer la page centrale lorsqu'on ferme la navigation */
+
+.navigation_boutton_superficielle {
+    display: none;
+    position: static;
+    width: 54px;
+    z-index: 7;
+}
+
+.nav {
+    position: static;
+    height: 575px;
+    background-color: #212529;
+}
+
+.button_menu {
+    position: static;
+    display: flex;
+    height: 50px;
+}
+
+.btn-dark {
+    display: flex;
+    position: static;
+    align-items: center;
+    width: 53px;
+}
+
+#button_open {
+    display: none;
+}
+
+.bi-list {
+    width: 50px;
+    color: #1cceff;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    margin-left: 0px;
+    width: 200px;
+}
+
+.nav_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #acacac;
+}
+
+.nav_text:hover {
+    color: #137c99;
+}
+
+.nav-link {
+    border-bottom: 1px solid rgb(73, 73, 80);
+    width: 100%;
+    height: 20%;
+}
+
+.nav-link-size {
+    height: 17%;
+
+}
+
+.nav-link:hover {
+    background-color: #0f6077;
+}
+
+.nav_active {
+    color: #1cceff;
+}
+
+.text-info {
+    display: flex;
+    align-items: center;
+}
+
+.icone {
+margin-right: 15px;
+}
+
+.footer_nav {
+    position: fixed;
+    display: flex;
+    background-color: #15171a;
+    color: red;
+    height: 50px;
+    width: 237px;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid #acacac;
+}
+
+.nav_avatar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    width: 20%;
+    height: 100%;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.avatar_discord {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.statut_avatar {
+    position: absolute;
+    width: 13px;
+    bottom: 6px;
+    right: 11px;
+    color: #00ff55;
+}
+
+.nav_username {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45%;
+    height: 100%;
+    color: white;
+    font-size: 12px;
+    
+}
+
+.username_discord_footer {
+    display: inline-block;
+    position: static;
+    width: 200px;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nav_icone {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.nav_icone_footer {
+    color: white;
+}
+
+.nav_icone_footer:hover {
+    color: #1cceff;
+}

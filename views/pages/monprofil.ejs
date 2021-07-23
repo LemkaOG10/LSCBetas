@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/css/header.css">
+    <link type="text/css" rel="stylesheet" href="/css/navigation.css">
+    <link type="text/css" rel="stylesheet" href="/css/monprofil.css">
+    <link type="text/css" rel="stylesheet" href="/css/error.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="/image/icons/LS_Criminal_Logo.ico" />
+    <title>LS Criminal - Profil</title>
+</head>
+
+<body class="background">
+
+    <!-- Message d'erreur / success -->
+
+    <%- include('../partials/error'); %>
+
+    <!-- Header -->
+
+    <%- include('../partials/header'); %>
+
+        <!-- Navigation -->
+
+        <%- include('../partials/navigation'); %>
+
+            <!-- Header qui se situe sur le côté -->
+
+            <div class="centremilieu">
+
+                <%- include('../partials/navigation_superficielle'); %>
+
+                    <div class="background_opacity">
+
+
+                    </div>
+
+                    <%- include('../partials/change_email'); %>
+
+                    <%- include('../partials/change_password'); %>
+
+                    <div class="contient_div">
+
+                        <div class="container_profil_full">
+
+                            <div class="user_info">
+
+                                <div class="user_avatar">
+
+                                    <img class="user_avatar_discord"
+                                        src=<%=currentUser.discord.avatar%>>
+
+                                </div>
+
+                                <div class="user_username">
+                                <%=currentUser.discord.username%><span class="user_tag">#<%=currentUser.discord.discriminator%></span>
+                                </div>
+
+                                <div class="container_more">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16"
+                                            style="color: white;">
+                                            <path
+                                                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                        </svg>
+
+                                        <div class="info_more">
+                                            J'avais la flemme de dev se boutton
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="user_data">
+
+                                <div class="child">
+
+                                    <div class="user_column">
+
+                                        <div class="user_title">
+                                            NOM D'UTILISATEUR
+                                        </div>
+
+                                        <div class="user_text" style="margin-left: 25px;">
+                                        <%=currentUser.discord.username%>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="container_changed">
+
+                                        <a class="button_modified user_text" href="#">
+                                            <div class="user_text">
+                                                Modifier
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="child">
+
+                                    <div class="user_column">
+
+                                        <div class="user_title">
+                                            ADRESSE EMAIL
+                                        </div>
+
+                                        <div class="user_text" style="margin-left: 25px;">
+                                            <%=currentUser.email%>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="container_changed">
+
+                                        <a class="button_modified user_text" id="open_change_email" href="#">
+                                            <div class="user_text">
+                                                Modifier
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="child">
+
+                                    <div class="user_column">
+
+                                        <div class="user_title">
+                                            MOT DE PASSE
+                                        </div>
+
+                                        <div class="user_text" style="margin-left: 25px;">
+                                            **********
+                                        </div>
+
+                                    </div>
+
+                                    <div class="container_changed">
+
+                                        <a class="button_modified user_text" id="open_change_password" href="#">
+                                            <div class="user_text">
+                                                Modifier
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+
+            </div>
+
+
+            <script src="/js/monprofil.js"></script>
+</body>
+
+</html>

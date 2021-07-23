@@ -1,0 +1,539 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Déclaration des polices importer */
+
+@font-face
+{
+  font-family: "Advent Pro";
+  src: url("../police/AdventPro-Bold.ttf");
+}
+ 
+@font-face
+{ 
+  font-family: "Metropolis";
+  src: url("../police/Metropolis-Light.otf");
+}
+
+input
+{
+  width: 0.8vw;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+  
+/*
+==================================================================
+              NAVIGATION GAUCHE
+==================================================================
+*/
+
+/* Permet d'aligner les deux divs principaux */
+
+/* Div qui englobe la div superficielle de la navigation et celle de la page */
+
+.centremilieu {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: 64px;
+  z-index: -1;
+  overflow: auto;
+}
+
+.centrage {
+  position: static;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+}
+
+/*
+==================================================================
+              BLOCK DEPOT DE DOSSIER
+==================================================================
+*/
+
+.background_opacity {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #25282c9f;
+  z-index: 2;
+
+}
+
+.container_dossier_info {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  width: 445px;
+  height: 400px;
+  margin-top: 25px;
+  background-color: #414449;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+.container_form {
+  position: static;
+  margin-top: 25px;
+  height: 750px;
+  background-color: #414449;
+}
+
+.container_change_username {
+  position: static;
+  display: none;
+  flex-direction: column;
+  width: 445px;
+  height: 100%;
+  left: 40%;
+  top: 100px;
+  border-radius: 10px;
+  z-index: 3;
+}
+
+.container_inpute {
+  position: static;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.container_input_email_change {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 35px;
+  height: 50px;
+}
+
+.title_change_username, .title_dossier_info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  color: white;
+  font-weight: bold;
+
+}
+
+.container_close {
+  position: absolute;
+  right: 35px;
+  top: 16px;
+}
+
+.bi-x-lg:hover {
+  color: #ffffff;
+}
+
+.header_container_dossier_info {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.header_container_change_username {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 10%;
+}
+
+.form_change_username {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  height: 25px;
+
+}
+
+.input_email_change, .input_password_change {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#name, #password {
+  position: static;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 0px 10px 0px 10px;
+  width: 80%;
+  height: 100%;
+  background-color: #303338;
+  border: 1px solid #2e2c2c;
+  border-radius: 5px;
+  color: white;
+}
+
+#name:focus, #password:focus { 
+  outline: none !important;
+  border-color: #1cceff;
+}
+
+.change_email_text, .change_password_text {
+  position: static;
+  display: flex;
+  align-items: flex-end;
+  margin: 5px 0px;
+  width: 80%;
+  height: 20px;
+  color: #8e9297;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 46px;
+
+}
+
+.footer_container_change_username {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 30%;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #2f3136;
+  text-decoration: none;
+}
+
+.footer_container_send_folder {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 75px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #2f3136;
+  text-decoration: none;
+}
+
+.button_change {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #4f545c;
+  opacity: 0.7;
+  font-size: 12px;
+  margin-right: 15px;
+  color: white;
+}
+
+.button_change:hover {
+  opacity: 1;
+}
+
+.annuler {
+  margin: 0px 25px 0px 0px;
+  color: white;
+}
+
+.paragraphe {
+  position: static;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: normal;
+  width: 100%;
+  height: 10%;
+  color: white;
+  margin-top: 15px;
+}
+
+/* Ipad Pro */
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+/* Ipad */
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+/* Surface Duo */
+
+@media screen and (max-width: 520px) {
+
+  .container_change_username {
+    width: 425px;
+  }
+
+}
+
+@media screen and (max-width: 540px) {
+
+  .container_dossier_info {
+    margin-top: 50px;
+    width: 425px;
+    height: 500px;
+  }
+
+  .footer_container_change_username {
+    height: 75px;
+  }
+
+  .button_change {
+    margin: 25px;
+    height: 50px;
+  }
+
+  .centrage {
+    height: 650px;
+  }
+
+  .container_close {
+    top: 22px;
+  }
+
+}
+
+@media screen and (max-width: 495px) {
+
+  .container_dossier_info {
+    margin-top: 50px;
+    width: 375px;
+    height: 500px;
+  }
+
+  .title_dossier_info {
+    font-size: 14px;
+  }
+
+  .container_close {
+    right: 20px;
+    top: 23px;
+  }
+
+  .container_change_username {
+    width: 350px;
+  }
+
+  .change_email_text, .change_password_text {
+    margin: 5px 0px;
+    margin-left: 37px;
+  
+  }
+
+}
+
+@media screen and (max-width: 443px) {
+
+  .paragraphe {
+    overflow: hidden;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  .container_dossier_info {
+    margin-top: 50px;
+    width: 300px;
+    height: 500px;
+  }
+
+  .title_dossier_info {
+    font-size: 12px;
+  }
+
+  .container_close {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+  }
+
+}
+
+/* Iphone 6/7/8 Plus & Pixel 2 XL*/
+
+
+@media screen and (max-width: 414px) {
+
+  .container_change_username {
+    width: 275px;
+  }
+
+  .change_email_text, .change_password_text {
+    margin: 5px 0px;
+    margin-left: 29px;
+  
+  }
+
+}
+
+/* Iphone X & Iphone 6/7/8 */
+
+@media screen and (max-width: 375px) {
+
+}
+
+/* Moto G4 & Galaxy */
+
+@media screen and (max-width: 360px) {
+
+  .container_dossier_info {
+    margin-top: 50px;
+    width: 275px;
+    height: 500px;
+  }
+
+  .title_dossier_info {
+    font-size: 10px;
+  }
+
+  .container_close {
+    position: absolute;
+    top: 27px;
+    right: 15px;
+  }
+
+}
+
+/* Iphone 5/SE */
+
+@media screen and (max-width: 340px) {
+
+  .container_dossier_info {
+    margin-top: 50px;
+    width: 250px;
+    height: 500px;
+  }
+
+  .title_dossier_info {
+    font-size: 10px;
+  }
+
+  .container_close {
+    position: absolute;
+    top: 27px;
+    right: 10px;
+  }
+
+  .container_change_username {
+    width: 250px;
+  }
+
+}
+
+@media screen and (max-width: 325px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+  .container_dossier_info {
+    margin-top: 50px;
+    width: 225px;
+    height: 500px;
+  }
+
+  .title_dossier_info {
+    font-size: 10px;
+  }
+
+  .container_close {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+  }
+
+  .container_change_username {
+    width: 225px;
+  }
+
+  .annuler {
+    margin-right: 0px;
+  }
+
+  .change_email_text, .change_password_text {
+    margin: 5px 0px;
+    margin-left: 23px;
+    font-size: 10px;
+  
+  }
+
+}
+
+/* Galaxy Fold */
+
+@media screen and (max-width: 280px) {
+
+  .container_dossier_info {
+    margin-top: 50px;
+    width: 215px;
+    height: 500px;
+  }
+
+  .title_dossier_info {
+    font-size: 10px;
+  }
+
+  .container_close {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+  }
+
+  .container_change_username {
+    width: 200px;
+  }
+
+  .annuler {
+    margin-left: 15px;
+  }
+
+  .button_change {
+    width: 75px;
+  }
+
+  .change_email_text, .change_password_text {
+    margin: 5px 0px;
+    margin-left: 23px;
+    font-size: 10px;
+  
+  }
+
+}
+
+@media screen and (max-width: 255px) {
+
+
+}
+
+

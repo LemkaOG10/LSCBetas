@@ -1,175 +1,213 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-@font-face
-{
+    white-space: nowrap;
+  }
+  
+  /* Déclaration des polices importer */
+  
+  @font-face
+  {
     font-family: "Advent Pro";
     src: url("../police/AdventPro-Bold.ttf");
-}
-
-.titre0
-{
+  }
+   
+  @font-face
+  { 
+    font-family: "Metropolis";
+    src: url("../police/Metropolis-Light.otf");
+  }
+  
+  input
+  {
+    width: 0.8vw;
+    margin-right: 10px;
+    margin-top: 0px;
+  }
+  
+  /* Barre de déroulement customisé */
+  
+  ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  }
+  ::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+  background: #1cceff;
+  border: 31px none red;
+  border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+  background: #1cceff;
+  }
+  ::-webkit-scrollbar-thumb:active {
+  background: #131313;
+  }
+  ::-webkit-scrollbar-track {
+  background: #918989;
+  border: 1px solid #131313;
+  border-radius: 5px;
+  }
+  ::-webkit-scrollbar-track:hover {
+  background: #f2f2f2;
+  }
+  ::-webkit-scrollbar-track:active {
+  background: #f5f5f5;
+  }
+  ::-webkit-scrollbar-corner {
+  background: transparent;
+  }
+  
+  
+  /* Section Background, fond du site */
+  
+  .background {
+    position: fixed;
+    background-color: #131313;
+    height: 100%;
     width: 100%;
-    height: 10vh;
+  }
+  
+  /*
+  ==================================================================
+                HEADER NAVIGATION SUPÉRIEUR
+  ==================================================================
+  */
+  
+  /* Header qui délimite les divs qui seront à l'intérieur */
+  
+  .titre0
+  {
+    width: 100%;
+    height: 64px;
     color: #7289da;
     background-color: #0C0C0C;
     border-bottom: 1px solid #99aab5;
     position: fixed;
-    overflow: hidden;
     display: flex;
     align-items: center;
-    z-index: 2;
-    
-}
-
-.titre0lscriminal
-{
-    font-family: "Advent Pro", "Arial Black";
-    color: #1cceff;
-    opacity: 0.8;
-    
-}
-
-.titre0lscriminal:hover
-{
-    font-family: "Advent Pro", "Arial Black";
-    color: #1cceff;
-    opacity: 1;
-    
-}
-
-.titre0lscriminal:hover
-{
-    font-size: 25px;
-    font-family: "Advent Pro", "Arial Black";
-    color: #1cceff;
-    opacity: 0.9;
-    
-}
-
-.titre0link {
-    text-decoration: none;
-
-}
-
-.c-title {
+    justify-content: space-between;
+    z-index: 34;
+    overflow: hidden;
+    top: 0px;
+  }
+  
+  /* Taille de la div titre0lscriminal */
+  
+  .c-title {
     width: 100%;
     display: flex;
     justify-content: center;
-
-}
-
-.l-social {
+    margin-right: 5%;
+    margin-left: 5%;
+  
+  }
+  
+  /* Taille de la div titre0lscriminal */
+  
+  .c-title_logo_lscriminal {
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+  
+  }
+  
+  /* Titre LS Criminal dans le Header ainsi que sa fonction Hover et sa fonction qui enlève l'effet lien */
+  
+  .titre0lscriminal
+  {
+    font-family: "Advent Pro", "Arial Black";
+    font-size: clamp(12px, 2vh, 5px);
+    color: #1cceff;
+    opacity: 0.6;
+  }
+  
+  .titre0lscriminal:hover
+  {
+    opacity: 1;
+  }
+  
+  .titre0lscriminallink {
+    text-decoration: none;
+  }
+  
+  /* Retrait de la liste ordonné l-social*/
+  
+  .l-social {
+    width: 40%;
     display: flex;
     list-style-type: none;
     flex-direction: row;
-
-}
-
-
-
-img.logo0
-{
-    width : 55px; 
-    opacity: 0.9;
-    margin-left: 40px;
+    justify-content: flex-end;
+    margin-right: 2%;
+  
+  }
+  
+  .container_social {
+    margin-right: 10%;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Image LS Criminal disponible dans le Header ainsi que sa Fonction Hover */
+  
+  img.logo0
+  {
+    width : 25px; 
+    height: 25px;
+    opacity: 0.5;
+    margin-left: 100%;
     
-}
-
-.logo0:hover
-{
+  }
+  
+  .logo0:hover
+  {
     opacity: 1;
-    margin-left: 40px;
-}
-
-.twitch
-{
-
+    margin-left: 100%;
+  }
+  
+  /* Image Twitch disponible dans le Header ainsi que sa Fonction Hover */
+  
+  .icone_social
+  {
+    position: static;
+    margin-right: 100%;
     opacity: 0.5;
-    width : 35px; 
-}
-
-.youtube
-{
-    margin-right: 35px;
-    margin-left: 35px;
-    opacity: 0.5;
-    width : 35px; 
-}
-
-.twitter
-{
-    margin-right: 35px;
-    opacity: 0.5;
-    width : 35px; 
-}
-
-.instagram
-{
-    margin-right: 45px;
-    opacity: 0.5;
-    width : 35px; 
-}
-
-.twitch:hover
-{
+    width : 20px; 
+    height: 20px;
+  }
+  
+  .icone_social:hover
+  {
     opacity: 1;
-    width : 35px; 
-}
+  }
 
-.youtube:hover
-{
-    opacity: 1;
-    width : 35px; 
-}
+  
+  /*
+  ==================================================================
+                CENTRE
+  ==================================================================
+  */
 
-.twitter:hover
-{
-    opacity: 1;
-    width : 35px; 
-}
-
-.instagram:hover
-{
-    opacity: 1;
-    width : 35px; 
-}
-
-.background {
-    height: 100vh;
-    width: 100%;
-    background-image: url("../image/LS_Criminal_Image.png");
-    background-position: center;
-    background-size: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-}
-
-.fondaccueil {
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    background-color: #0C0C0C;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    z-index: 1;
-}
+  .scrolldiv {
+      position: static;
+      display: flex;
+      overflow-y: auto;
+      width: 100%;
+      height: 100%;
+      margin-top: 65px;
+  }
 
 .bienvenu
 {
-    position: fixed;
+    position: static;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    overflow: hidden;
     width: 100%;
     height: 500px;
     color: #7289da;
@@ -180,14 +218,17 @@ img.logo0
 
 .bienvenu:hover
 {
-    width: 100%;
-    height: 500px;
-    color: #7289da;
-    background-color: #131313;
     opacity: 1;
-    border-right: 1px solid #99aab5;
-    border-left: 1px solid #99aab5;
-    border-top: 1px solid #99aab5;
+}
+
+.ish {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
 }
 
 .text {
@@ -195,13 +236,16 @@ img.logo0
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
+    height: 30%;
+    margin-top: 5%;
 }
 
 .bienvenutitre
 {
     font-family: "Advent Pro", "Arial Black";
-    font-size: 35px;
+    font-size: 1.5vw;
     color: #1cceff;
     position: static;
 }
@@ -209,17 +253,20 @@ img.logo0
 .bienvenutext
 {
     font-family: "Arial";
-    font-size: 16px;
+    font-size: 1vw;
     color: white;
     position: static;
 }
 
 .nousvous {
     font-family: "Arial";
-    font-size: 16px;
+    font-size: 1vw;
     color: white;
     position: static;
 }
+
+
+/* Grande Div qui englobe les deux divs des deux bouttons */
 
 .boutton {
     position: static;
@@ -227,64 +274,251 @@ img.logo0
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    height: 25%;
+    width: 50%;
+    margin-top: 2%;
 }
 
-.bouttonwl {
-    font-family: "Advent Pro", "Arial Black";
+/* Grande Div qui permet de se flex-direction column avec la div englobequestion et de centrer le boutton */
+
+.Englobebouttonfixe3
+{
+    height: 80%;
+    width: 10vw;
     position: static;
-    width: 125px;
-    height: 40px;
-    background: linear-gradient(45deg, #44A0B6, #22515C);
-    border-radius: 20px;
-    color: #FFF;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 200;
-    opacity: 0.5;
-    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 80;
 }
 
-.bouttondiscord {
-    font-family: "Advent Pro", "Arial Black";
-    position: static;
-    width: 125px;
-    height: 40px;
-    background: linear-gradient(45deg, #44A0B6, #22515C);
-    border-radius: 20px;
-    color: #FFF;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 200;
-    opacity: 0.5;
-}
+/* Base du boutton qui alligne son contenu */
 
-.bouttonwl:hover {
-    font-family: "Advent Pro", "Arial Black";
+.buttons3 {
     position: static;
-    width: 125px;
-    height: 40px;
-    background: linear-gradient(45deg, #44A0B6, #22515C);
-    border-radius: 20px;
-    color: #FFF;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 200;
-    opacity: 1;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 80%;
+  /*   padding: 2em 0em; */
+  }
 
-.bouttondiscord:hover {
-    font-family: "Advent Pro", "Arial Black";
+/* Texte présent au-dessus du boutton */
+  
+  .h1boutton {
+    text-align: left;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+    margin: 0 0 0.4em;
+    font-size: 1em;
+  }
+  
+  .pboutton {
+    text-align: left;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+    font-size: 0.8em;
+    margin: 0 0 2em;
+  }
+  
+
+/* Texte présent dans le boutton */
+
+.btn {
+    letter-spacing: 0.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.9vw;
+    font-family: 'Metropolis';
+    font-weight: 900;
+    line-height: 45px;
+    width: 100%;
     position: static;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  
+  .btn:hover {
+    text-decoration: none;
+  }
+  
+  /* Background du boutton ainsi que son contour */
+  
+  .effect04 {
+    --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+    display: var(--uismLinkDisplay);
+    color: #ffffff;
+    outline: solid  2px #ffffff;
+    position: relative;
+    transition-duration: 0.4s;
+    overflow: hidden;
     width: 125px;
-    height: 40px;
-    background: linear-gradient(45deg, #44A0B6, #22515C);
-    border-radius: 20px;
-    color: #FFF;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 200;
-    opacity: 1;
-}
+    height: 50px;
+  }
+  
+  .effect043 {
+    --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+    display: var(--uismLinkDisplay);
+    color: #ffffff;
+    outline: solid  2px #ffffff;
+    position: relative;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    width: 100%;
+    height: 3vw;
+  }
+  
+  /* Effet du boutton */
+  
+  .effect04::before,
+  .effect04 span{
+      margin: 0 auto;
+      transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+      transition-duration: 0.4s;
+  }
+  
+  .effect043::before,
+  .effect043 span{
+      margin: 5px 5px 5px 5px;
+      transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+      transition-duration: 0.4s;
+  }
+  
+  /* Effet du boutton avec la fonction Hover*/
+  
+  .effect04:hover{
+  
+    background-color: #1cceff;
+  }
+  
+  .effect043:hover{
+  
+    background-color: #1cceff;
+  }
+  
+  /* Effet lorsque le span apparaît du boutton avec la fonction Hover */
+  
+  .effect04:hover span{
+    -webkit-transform: translateY(-400%) scale(-0.1,20);
+            transform: translateY(-400%) scale(-0.1,20);
+  }
+  
+  .effect043:hover span{
+    -webkit-transform: translateY(-400%) scale(-0.1,20);
+            transform: translateY(-400%) scale(-0.1,20);
+  }
+  
+  /* Effet du boutton pendant la fonction Hover */
+  
+  .effect04::before{
+    content: attr(data-sm-link-text);
+      color: #FFF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transform: translateY(500%) scale(-0.1,20);
+            transform: translateY(500%) scale(-0.1,20);
+  }
+  
+  .effect043::before{
+    content: attr(data-sm-link-text);
+      color: #FFF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transform: translateY(500%) scale(-0.1,20);
+            transform: translateY(500%) scale(-0.1,20);
+  }
+  
+  /* Effet du boutton après la fonction Hover */
+  
+  .effect04:hover::before{
+    letter-spacing: 0.05em;
+    -webkit-transform: translateY(0) scale(1,1);
+            transform: translateY(0) scale(1,1);
+  }
+  
+  .effect043:hover::before{
+    letter-spacing: 0.05em;
+    -webkit-transform: translateY(0) scale(1,1);
+            transform: translateY(0) scale(1,1);
+  }
+  
+  /* Effet du boutton après la fonction Hover */
+
+
+  @media screen and (max-width: 500px) {
+      .bienvenutitre
+      {
+          font-size: 4vw;
+          color: #1cceff;
+          position: static;
+      }
+      
+      .bienvenutext
+      {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        font-size: 1.9vw;
+      }
+      
+      .nousvous {
+        font-size: 1.9vw;
+      }
+    
+      .Englobebouttonfixe3 {
+        width: 40%;
+      }
+
+      .effect043 {
+        height: 6vw;
+        width: 100%;
+      }
+
+      .btn {
+        font-size: 2vw;
+      }
+
+  }
+  
+@media screen and (min-width: 500px) and (max-width: 880px) {
+    
+    .bienvenutitre
+    {
+        font-size: 2vw;
+        color: #1cceff;
+        position: static;
+    }
+    
+    .bienvenutext
+    {
+        font-size: 1.5vw;
+    }
+    
+    .nousvous {
+        font-size: 1.5vw;
+    }
+  
+    .effect043 {
+      height: 4vw;
+    }
+}  
+/*
+==================================================================
+                
+==================================================================
+*/
 
 
 

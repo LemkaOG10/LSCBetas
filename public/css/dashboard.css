@@ -1,0 +1,384 @@
+* {
+    white-space: nowrap;
+}
+
+/*
+==================================================================
+                PAGE D'ACCUEIL
+==================================================================
+*/
+
+/* Div qui englobe la div superficielle de la navigation et celle de la page */
+
+.centremilieu {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 64px;
+    z-index: -1;
+    overflow: auto;
+}
+
+.etapes {
+    position: static;
+    display: flex;
+    align-items: center;
+    height: 40%;
+    width: 55%;
+    background-color: #212529;
+    border-bottom: 1px solid #474444;
+    border-right: 1px solid #474444;
+    border-left: 1px solid #474444;
+    border-bottom: 1px solid rgb(73, 73, 80);
+    margin-left: 100px;
+    margin-right: 100px; 
+    margin-top: 50px; 
+}
+
+.nav-etapes {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+
+.nav-link {
+    border-bottom: 1px solid rgb(73, 73, 80);
+    width: 100%;
+    height: 20%;
+}
+
+.nav-link-size {
+    height: 17%;
+
+}
+
+.nav-link:hover {
+    background-color: #0f6077;
+}
+
+.nav_text_etapes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 100%;
+    color: white;
+}
+
+.container_title {
+    border-radius: 10px 10px 0px 0px;
+    border-top: 1px solid rgb(182, 178, 178);
+    background-color: #1d1f1f;
+}
+
+.container_title:hover {
+    border-top: 1px solid rgb(182, 178, 178);
+    background-color: #003544;
+}
+
+.container_icone_etapes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    width: 20%;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+}
+
+.container_etapes_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.container_etapes_text:hover {
+    opacity: 0.5;
+}
+
+.statut_etapes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    margin-right: 5%;
+}
+
+img.icone_statut_etapes {
+    position: static;
+    width: 17px;
+}
+
+.container_title_discord {
+    display: flex;
+    align-items: center;
+    position: static;
+    border-bottom: 1px solid rgb(182, 178, 178);
+    height: 50%;
+    width: 100%;
+    text-decoration: none; 
+    opacity: 0.7;
+}
+
+.container_discord {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    background-color: #312f2a;
+    border: 1px solid rgb(100, 94, 94);
+    width: 80%;
+    height: 100%;
+    margin: 15px;
+    border-radius: 10px;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.container_title_discord:hover {
+    opacity: 1;
+}
+
+.container_discord:hover {
+    opacity: 1;
+}
+
+.container_discord_text {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 80%;
+}
+
+.contient_div {
+    display: flex; 
+    flex-direction: row; 
+    height: 600px; 
+    width: 900px; 
+    padding: 0px; 
+    margin: 0px 35px 0px 35px; 
+    overflow: hidden;
+}
+
+.container_discord_full {
+    position: static; 
+    display : flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 150px; 
+    width: 50%; 
+    padding: 0px; 
+    margin: 50px 0px 0px 35px; 
+    border-radius: 10px;
+    background-color: #373844; 
+    text-decoration: none;
+}
+
+.container_icone_discord {
+    position: static; 
+    display : flex; 
+    align-items: center; 
+    justify-content: center;
+    margin-left: 15px;
+}
+
+/* Ipad Pro */
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .contient_div {
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container_discord_full {
+        margin-left: 0px;
+    }
+}
+
+/* Ipad */
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    .container_discord_full {
+        margin-left: 0px;
+        width: 100%;
+    }
+    
+    .container_discord_text {
+        font-size: 65%;
+    }
+
+}
+
+/* Surface Duo */
+
+@media screen and (max-width: 540px) {
+    
+    .container_discord_full {
+        margin-left: 0px;
+        width: 100%;
+    }
+    
+    .container_discord_text {
+        font-size: 65%;
+    }
+
+}
+
+@media screen and (max-width: 505px) {
+
+    .contient_div {
+        justify-content: flex-start;
+        height: 600px; 
+        width: 100%; 
+        padding: 0px; 
+        margin: 0px 15px 0px 0px; 
+    }
+    
+.container_discord_full {
+    margin-left: 0px;
+    width: 100%;
+}
+
+}
+
+/* Iphone 6/7/8 Plus & Pixel 2 XL*/
+
+
+@media screen and (max-width: 414px) {
+
+    .contient_div {
+        justify-content: flex-start;
+        height: 600px; 
+        width: 100%; 
+        padding: 0px; 
+        margin: 0px 15px 0px 0px; 
+    }
+
+    .container_discord_full {
+        width: 100%;
+    }
+
+    .container_etapes_text {
+        font-size: 12px;
+    }
+}
+
+/* Iphone X & Iphone 6/7/8 */
+
+@media screen and (max-width: 375px) {
+
+    .container_discord_full {
+        width: 100%;
+    }
+    
+    .container_etapes_text {
+        font-size: 10px;
+    }
+
+}
+
+/* Moto G4 & Galaxy */
+
+@media screen and (max-width: 360px) {
+    .container_discord_text {
+        font-size: 65%;
+    }
+
+    .container_discord_full {
+        width: 100%;
+    }
+    
+    .container_etapes_text {
+        font-size: 10px;
+    }
+}
+
+/* Iphone 5/SE */
+
+@media screen and (max-width: 325px) {
+
+    .contient_div {
+        justify-content: flex-start;
+        height: 600px; 
+        width: 100%; 
+        padding: 0px; 
+        margin: 0px 15px 0px 0px;
+    }
+
+    .container_discord_full {
+        width: 100%;
+    }
+    
+    .container_etapes_text {
+        font-size: 12px;
+    }
+
+    img.icone_statut_etapes {
+        width: 13px;
+
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .contient_div {
+        justify-content: flex-start;
+        height: 660px; 
+        width: 100%; 
+        padding: 0px; 
+        margin: 0px 15px 0px 0px; 
+    }
+
+    .container_discord_full {
+        width: 100%;
+    }
+    
+    .container_etapes_text {
+        font-size: 12px;
+    }
+
+    img.icone_statut_etapes {
+        width: 13px;
+
+    }
+
+}
+
+/* Galaxy Fold */
+
+@media screen and (max-width: 280px) {
+
+    .contient_div {
+        justify-content: flex-start;
+        height: 600px; 
+        width: 100%; 
+        padding: 0px; 
+        margin: 0px 15px 0px 0px; 
+    }
+    
+    .container_etapes_text {
+        font-size: 10px;
+    }
+
+}

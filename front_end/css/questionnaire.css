@@ -1,531 +1,433 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
 }
+
+/* Déclaration des polices importer */
 
 @font-face
 {
-    font-family: "Advent Pro";
-    src: url("../police/AdventPro-Bold.ttf");
+  font-family: "Advent Pro";
+  src: url("../police/AdventPro-Bold.ttf");
 }
-   
+ 
 @font-face
 { 
-    font-family: "Metropolis";
-    src: url("../police/Metropolis-Light.otf");
+  font-family: "Metropolis";
+  src: url("../police/Metropolis-Light.otf");
 }
 
 input
 {
-    margin-right: 10px;
-    margin-top: 3px;
+  width: 0.8vw;
+  margin-right: 10px;
+  margin-top: 0px;
 }
 
+/* Barre de déroulement customisé */
+
+::-webkit-scrollbar {
+width: 5px;
+height: 5px;
+}
+::-webkit-scrollbar-button {
+width: 0px;
+height: 0px;
+}
+::-webkit-scrollbar-thumb {
+background: #1cceff;
+border: 31px none red;
+border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+background: #1cceff;
+}
+::-webkit-scrollbar-thumb:active {
+background: #131313;
+}
+::-webkit-scrollbar-track {
+background: #918989;
+border: 1px solid #131313;
+border-radius: 5px;
+}
+::-webkit-scrollbar-track:hover {
+background: #f2f2f2;
+}
+::-webkit-scrollbar-track:active {
+background: #f5f5f5;
+}
+::-webkit-scrollbar-corner {
+background: transparent;
+}
+
+
+/* Section Background, fond du site */
+
+.background {
+  position: fixed;
+  background-color: #131313;
+  height: 100%;
+  width: 100%;
+}
+
+/*
+==================================================================
+              HEADER NAVIGATION SUPÉRIEUR
+==================================================================
+*/
+
+/* Header qui délimite les divs qui seront à l'intérieur */
 
 .titre0
 {
-    width: 100%;
-    height: 10vh;
-    color: #7289da;
-    background-color: #0C0C0C;
-    border-bottom: 1px solid #99aab5;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    z-index: 20;
-    overflow: hidden;
+  width: 100%;
+  height: 64px;
+  color: #7289da;
+  background-color: #0C0C0C;
+  border-bottom: 1px solid #99aab5;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 34;
+  overflow: hidden;
+  top: 0px;
 }
+
+/* Taille de la div titre0lscriminal */
+
+.c-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-right: 5%;
+  margin-left: 5%;
+
+}
+
+/* Taille de la div titre0lscriminal */
+
+.c-title_logo_lscriminal {
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+/* Titre LS Criminal dans le Header ainsi que sa fonction Hover et sa fonction qui enlève l'effet lien */
 
 .titre0lscriminal
 {
-    font-family: "Advent Pro", "Arial Black";
-    color: #1cceff;
-    opacity: 0.6;
-    
+  font-family: "Advent Pro", "Arial Black";
+  font-size: clamp(12px, 2vh, 5px);
+  color: #1cceff;
+  opacity: 0.6;
 }
 
 .titre0lscriminal:hover
 {
-    font-family: "Advent Pro", "Arial Black";
-    color: #1cceff;
-    opacity: 1;
-    
+  opacity: 1;
 }
 
-.bienvenutitre
-{
-    font-family: "Advent Pro", "Arial Black";
-    font-size: 25px;
-    color: #1cceff;
-    position: fixed;
-    margin-top: 50px;
+.titre0lscriminallink {
+  text-decoration: none;
 }
 
-.bienvenutext
-{
-    font-family: "Arial";
-    font-size: 12px;
-    color: white;
-    position: fixed;
-    margin-top: 75px;
-}
-
-.bienvenu
-{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 350px;
-    height: 60vh;
-    color: #7289da;
-    background-color: #0C0C0C;
-    opacity: 0.8;
-    border-bottom: 1px solid #99aab5;
-    position: fixed;
-    margin-left: 37%;
-    margin-top: 750px;
-}
-
-.bienvenu:hover
-{
-    width: 350px;
-    height: 60vh;
-    color: #7289da;
-    background-color: #0C0C0C;
-    opacity: 1;
-    border-right: 1px solid #99aab5;
-    border-left: 1px solid #99aab5;
-    border-top: 1px solid #99aab5;
-    position: fixed;
-    margin-left: 37%;
-    margin-top: 750px;
-}
-
-.bouttonwl {
-    font-family: "Advent Pro", "Arial Black";
-    position: absolute;
-    width: 125px;
-    height: 40px;
-    background: linear-gradient(45deg, #44A0B6, #22515C);
-    border-radius: 20px;
-    color: #FFF;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 200;
-    margin-top: 360px;
-    margin-left: -150px;
-    opacity: 0.5;
-}
-
-.bouttondiscord {
-    font-family: "Advent Pro", "Arial Black";
-    position: absolute;
-    width: 125px;
-    height: 40px;
-    background: linear-gradient(45deg, #44A0B6, #22515C);
-    border-radius: 20px;
-    color: #FFF;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 200;
-    margin-top: 250px;
-    margin-left: -150px;
-    opacity: 0.5;
-}
-
-.bouttonwl:hover {
-    font-family: "Advent Pro", "Arial Black";
-    position: absolute;
-    width: 125px;
-    height: 40px;
-    background: linear-gradient(45deg, #44A0B6, #22515C);
-    border-radius: 20px;
-    color: #FFF;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 200;
-    margin-top: 360px;
-    margin-left: -150px;
-    opacity: 1;
-}
-
-.bouttondiscord:hover {
-    font-family: "Advent Pro", "Arial Black";
-    position: absolute;
-    width: 125px;
-    height: 40px;
-    background: linear-gradient(45deg, #44A0B6, #22515C);
-    border-radius: 20px;
-    color: #FFF;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 200;
-    margin-top: 250px;
-    margin-left: -150px;
-    opacity: 1;
-}
-
-.nousespace
-{
-    font-family: "Arial";
-    font-size: 12px;
-    color: white;
-    margin-left: 10px;
-    margin-top: 275px;
-}
-
-.titre0lscriminal:hover
-{
-    font-size: 25px;
-    font-family: "Advent Pro", "Arial Black";
-    color: #1cceff;
-    opacity: 0.9;
-    
-}
-
-.titre0link {
-    text-decoration: none;
-
-}
-
-.c-title {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-}
+/* Retrait de la liste ordonné l-social*/
 
 .l-social {
-    display: flex;
-    list-style-type: none;
-    flex-direction: row;
+  width: 40%;
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 2%;
 
 }
 
+.container_social {
+  margin-right: 10%;
+  height: 100%;
+  width: 100%;
+}
 
+/* Image LS Criminal disponible dans le Header ainsi que sa Fonction Hover */
 
 img.logo0
 {
-    width : 55px; 
-    opacity: 0.9;
-    margin-left: 40px;
-    
+  width : 25px; 
+  height: 25px;
+  opacity: 0.5;
+  margin-left: 100%;
+  
 }
 
 .logo0:hover
-{
+  {
     opacity: 1;
-    margin-left: 40px;
-}
+    margin-left: 100%;
+  }
 
-.twitch
+/* Image Twitch disponible dans le Header ainsi que sa Fonction Hover */
+
+.icone_social
 {
-
-    opacity: 0.5;
-    width : 35px; 
+  position: static;
+  margin-right: 100%;
+  opacity: 0.5;
+  width : 20px; 
+  height: 20px;
 }
 
-.youtube
+.icone_social:hover
 {
-    margin-right: 35px;
-    margin-left: 35px;
-    opacity: 0.5;
-    width : 35px; 
+  opacity: 1;
 }
 
-.twitter
+/*
+==================================================================
+              NAVIGATION GAUCHE
+==================================================================
+*/
+
+/* Permet d'aligner les deux divs principaux */
+
+.centremilieu
 {
-    margin-right: 35px;
-    opacity: 0.5;
-    width : 35px; 
+  position: static;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  text-decoration: none;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  margin-top: 64px;
 }
 
-.instagram
-{
-    margin-right: 45px;
-    opacity: 0.5;
-    width : 35px; 
+.fixenavcote {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  position: fixed;
+  overflow: hidden;
+  text-decoration: none;
+  background-color: #0C0C0C;
+  width: 16.6%;
+  height: 100%;
+  top: 64px;
+  border-right: 1px solid #99aab5;
+  z-index: 32;
 }
 
-.twitch:hover
-{
-    opacity: 1;
-    width : 35px; 
-}
-
-.youtube:hover
-{
-    opacity: 1;
-    width : 35px; 
-}
-
-.twitter:hover
-{
-    opacity: 1;
-    width : 35px; 
-}
-
-.instagram:hover
-{
-    opacity: 1;
-    width : 35px; 
-}
-
-.background {
-    position: fixed;
-    background-color: #131313;
-    height: 100%;
-    width: 100%;
-}
+/* Fond Navigation sur la gauche */
 
 .fondnavcote
 {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    position: fixed;
-    background-color: #0C0C0C;
-    width: 20%;
-    height: 100%;
-    top: 10vh;
-    z-index: 1;
-    border-right: 1px solid #99aab5;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  position: static;
+  overflow: hidden;
+  text-decoration: none;
+  background-color: #0C0C0C;
+  width: 20%;
+  /* height: 1366px; */
+  height: 500px;
+  border-right: 1px solid #99aab5;
+  z-index: 33;
 }
+
+/* Fond des liste puce Nav qui permet au list puce de prendre que 40% de la fondnavcote*/
+
+/*
 
 .listepucenav
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    font-family: "Advent Pro", "Arial Black";
-    overflow: hidden;
-    text-decoration: none;
-    color: white;
-    font-size: 150%;
-    background-color: #0C0C0C;
-    width: 100%;
-    height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Advent Pro", "Arial Black";
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+  font-size: 100%;
+  background-color: #0C0C0C;
+  width: 100%;
+  height: 40%;
+} */
+
+/* Permet de d'appliquer des attributs ainsi que la Fonction Hover à toutes les list à puce présent dans la div listpuce */
+
+.listepuce
+{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  position: static;
+  text-decoration: none;
+  border-bottom: 1px solid #99aab5;
+  color: white;
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
 }
 
-.monprofil
+.listepuce:hover
 {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    position: static;
-    overflow: hidden;
-    z-index: 3;
-    text-decoration: none;
-    border-bottom: 1px solid #99aab5;
-    color: white;
-    list-style-type: none;
-    width: 100%;
-    height: 33.3%;
+  opacity: 0.7;
+  background-color: #1cceff;
 }
 
-.monprofil:hover
+/* Retire le lien des liste à puce */
+
+.listepucelien
 {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    position: static;
-    overflow: hidden;
-    z-index: 3;
-    text-decoration: none;
-    color: white;
-    list-style-type: none;
-    background-color: #1cceff;
-    width: 100%;
-    height: 33.3%;
+  text-decoration: none;
+  color: white;
 }
 
-.monprofillien
-{
-    text-decoration: none;
-    color: white;
+/* Permet d'ajouter une bordure à Gauche de la liste quand on se trouve dans la Page */
+
+.barrenav {
+  border-left: 7px solid #1cceff;
 }
 
-.logoprofil
+/* Permet d'ajouter des attributs au logo de la liste à puce gauche */
+
+.logolisteapuce
 {
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
+  width: 20px;
+  height: 20px;
+  /* margin-right: 20px; */
 }
 
-.questionnaire
-{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    position: static;
-    overflow: hidden; 
-    z-index: 4;
-    text-decoration: none;
-    color: white;
-    list-style-type: none;
-    border-bottom: 1px solid #99aab5;
-    border-left: 15px solid #1cceff;
-    width: 100%;
-    height: 33.3%;
+/* Permet de bien aligner respectivement les div nav et alignicon entre elle */
+
+.nav {
+  display: flex;
+  position: static;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+  font-family: "Advent Pro", "Arial Black";
+  font-size: 1.2vw;
 }
 
-.questionnaire:hover
-{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    position: static;
-    overflow: hidden; 
-    z-index: 4;
-    text-decoration: none;
-    color: white;
-    list-style-type: none;
-    background-color: #1cceff;
-    border-bottom: 1px solid #99aab5;
-    width: 100%;
-    height: 33.3%;
+.alignicon {
+  display: flex;
+  position: static;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 20%;
 }
 
-.questionnairelien
-{
-    text-decoration: none;
-    color: white;
-}
 
-.logoquestionnaire
-{
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
-}
+/*
+==================================================================
+                FORMULAIRE 1 & 2
+==================================================================
+*/
 
-.dossier
-{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    position: static;
-    overflow: hidden; 
-    z-index: 4;
-    text-decoration: none;
-    color: white;
-    list-style-type: none;
-    border-bottom: 1px solid #99aab5;
-    width: 100%;
-    height: 33.3%;
-}
-
-.dossier:hover
-{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    position: static;
-    overflow: hidden; 
-    z-index: 4;
-    text-decoration: none;
-    color: white;
-    list-style-type: none;
-    background-color: #1cceff;
-    border-bottom: 1px solid #99aab5;
-    width: 100%;
-    height: 33.3%;
-}
-
-.dossierlien
-{
-    text-decoration: none;
-    color: white;
-}
-
-.logodossier
-{
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
-}
-
-.besoindaide
-{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    position: static;
-    overflow: hidden;
-    z-index: 5;
-    text-decoration: none;
-    color: white;
-    list-style-type: none;
-    border-bottom: 1px solid #99aab5;
-    width: 100%;
-    height: 33.3%;
-}
-
-.besoindaide:hover
-{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    position: static;
-    overflow: hidden;
-    z-index: 5;
-    text-decoration: none;
-    color: white;
-    list-style-type: none;
-    background-color: #1cceff;
-    border-bottom: 1px solid #99aab5;
-    width: 100%;
-    height: 33.3%;
-}
-
-.besoindaidelien
-{
-    text-decoration: none;
-    color: white;
-}
-
-.logobesoindaide
-{
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
-}
+/* Fond du questionnaire 1 & 2 qui délimitera la div qui englobe les toutes questions */
 
 .fondformulaire
 {
-    position: fixed;
+    position: static;
     display: flex;
     align-items: center;
-    overflow: hidden;
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 20%;
+    height: 874px;
 }
 
-.Englobequestion
+.fondformulaire2
+{
+    position: static;
+    display: none;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 874px;
+}
+
+/* Formulaire du questionnaire qui se trouve dans la div fondformulaire et délimite toutes les toutes questions */
+
+.formulaire
 {
     position: static;
     display: flex;
-    flex-flow: column wrap;
-    overflow: hidden;
-    width: 75%;
-    height: 75%;
-    margin-left: 25px;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
+
+.formulaire2
+{
+    position: static;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 100%;
+}
+
+/* Permet de bien classer les divs questions1 l'une à côté de l'autre */
+
+.wrap {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 969px;
+}
+
+/* Annonce du Résultat du questionnaire */
+
+.resultatquestionnaire {
+    position: static;
+    flex-direction: row;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 7%;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #500000;
+    color: white;
+}
+
+.resultattext {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 100%;
+    text-align: center;
+    font-size: 1vw;
+    margin-right: 5%;
+    margin-left: 8%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-family: "Metropolis";
+}
+
+
+/* Div qui permet d'ajouter des attributs au block ou les questions sont contenu || ecriturequestion1 permet de modifier la question */
 
 .ecriturequestion1
 {
-    overflow: hidden;
+    position: static;
+    display: flex;
     font-size: 90%;
     font-family: 'Metropolis';
     color: #1cceff;
@@ -533,180 +435,417 @@ img.logo0
 
 .question1
 {
-    position: static;
-    color: white;
     display: flex;
-    overflow: hidden;
+    position: relative;
+    color: white;
+    overflow-y: auto;
     flex-direction: column;
     justify-content: space-around;
-    width: 45%;
-    height: 25%;
-    font-size: 85%;
+    width: 33vw;
+    height: 20%;
+    font-size: clamp(0.8vw, 0.5vw, 4vw);
     font-family: 'Metropolis';
     background-color: #2E2E2E;
     box-shadow: 1px 1px 1px black; 
-    padding: 10px 0px 10px 25px;
-    margin-left: 25px;
-    margin-right: 25px;
+    padding: 10px 25px 10px 25px;
+    margin: 15px 1vw 15px 1vw;
 }
 
-.ecriturequestion2
-{
+/* Grande Div qui permet de se flex-direction column avec la div englobequestion et de centrer le boutton */
 
-    font-size: 90%;
-    font-family: 'Metropolis';
-    color: #1cceff;
-}
-
-.question2
+.Englobebouttonfixe
 {
     position: static;
-    color: white;
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
     overflow: hidden;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 45%;
-    height: 25%;
-    font-size: 85%;
-    font-family: 'Metropolis';
-    background-color: #2E2E2E;
-    box-shadow: 1px 1px 1px black; 
-    padding: 10px 0px 10px 25px;
-    margin-top: 25px;
-    margin-left: 25px;
+    width: 100%;
+    height: 20%;
+    padding: 10px 0px 10px 10px;
+    margin: 5px 0px 5px 0px;
+    z-index: 60;
 }
 
-.ecriturequestion3
+.Englobebouttonfixe3
 {
-
-    font-size: 90%;
-    font-family: 'Metropolis';
-    color: #1cceff;
-}
-
-.question3
-{
+    height: 80%;
+    width: 10vw;
     position: static;
-    color: white;
-    display: flex;
-    overflow: hidden;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 45%;
-    height: 25%;
-    font-size: 85%;
-    font-family: 'Metropolis';
-    background-color: #2E2E2E;
-    box-shadow: 1px 1px 1px black; 
-    padding: 10px 0px 10px 25px;
-    margin-top: 25px;
-    margin-left: 25px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 60;
+    margin-right: 2%;
 }
 
-.ecriturequestion4
-{
+/* Base du boutton qui alligne son contenu */
 
-    font-size: 90%;
-    font-family: 'Metropolis';
-    color: #1cceff;
+.buttons {
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 35%;
+  margin-top: 1.5%;
+/*   padding: 2em 0em; */
 }
 
-.question4
-{
+.buttons3 {
     position: static;
-    color: white;
     display: flex;
-    overflow: hidden;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 45%;
-    height: 25%;
-    font-size: 85%;
-    font-family: 'Metropolis';
-    background-color: #2E2E2E;
-    box-shadow: 1px 1px 1px black; 
-    padding: 10px 0px 10px 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 80%;
+  /*   padding: 2em 0em; */
+  }
+
+/* Texte présent au-dessus du boutton */
+
+.h1boutton {
+  text-align: left;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.4em;
+  font-size: 1em;
 }
 
-.ecriturequestion5
-{
-
-    font-size: 90%;
-    font-family: 'Metropolis';
-    color: #1cceff;
+.pboutton {
+  text-align: left;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  font-size: 0.8em;
+  margin: 0 0 2em;
 }
 
-.question5
-{
-    position: static;
-    color: white;
-    display: flex;
-    overflow: hidden;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 45%;
-    height: 25%;
-    font-size: 85%;
-    font-family: 'Metropolis';
-    background-color: #2E2E2E;
-    box-shadow: 1px 1px 1px black; 
-    padding: 10px 0px 10px 25px;
-    margin-top: 25px;
+/* Texte présent dans le boutton */
+
+.btn {
+  letter-spacing: 0.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.9vw;
+  font-family: 'Metropolis';
+  font-weight: 900;
+  line-height: 45px;
+  width: 100%;
+  position: static;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
 }
 
-.ecriturequestion6
-{
-
-    font-size: 90%;
-    font-family: 'Metropolis';
-    color: #1cceff;
+.btn:hover {
+  text-decoration: none;
 }
 
-.question6
-{
-    position: static;
-    color: white;
-    display: flex;
-    overflow: hidden;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 45%;
-    height: 25%;
-    font-size: 85%;
-    font-family: 'Metropolis';
-    background-color: #2E2E2E;
-    box-shadow: 1px 1px 1px black; 
-    padding: 10px 0px 10px 25px;
-    margin-top: 25px;
+/* Background du boutton ainsi que son contour */
+
+.effect04 {
+  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+  display: var(--uismLinkDisplay);
+  color: #ffffff;
+  outline: solid  2px #ffffff;
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  width: 125px;
+  height: 50px;
 }
 
-.bouttonsuite {
-    font-family: "Advent Pro", "Arial Black";
-    width: 125px;
-    height: 40px;
-    background: linear-gradient(45deg, #44A0B6, #22515C);
-    border-radius: 20px;
+.effect043 {
+  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+  display: var(--uismLinkDisplay);
+  color: #ffffff;
+  outline: solid  2px #ffffff;
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  width: 8vw;
+  height: 2.5vw;
+}
+
+/* Effet du boutton */
+
+.effect04::before,
+.effect04 span{
+    margin: 0 auto;
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    transition-duration: 0.4s;
+}
+
+.effect043::before,
+.effect043 span{
+    margin: 5px 5px 5px 5px;
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    transition-duration: 0.4s;
+}
+
+/* Effet du boutton avec la fonction Hover*/
+
+.effect04:hover{
+
+  background-color: #1cceff;
+}
+
+.effect043:hover{
+
+  background-color: #1cceff;
+}
+
+/* Effet lorsque le span apparaît du boutton avec la fonction Hover */
+
+.effect04:hover span{
+  -webkit-transform: translateY(-400%) scale(-0.1,20);
+          transform: translateY(-400%) scale(-0.1,20);
+}
+
+.effect043:hover span{
+  -webkit-transform: translateY(-400%) scale(-0.1,20);
+          transform: translateY(-400%) scale(-0.1,20);
+}
+
+/* Effet du boutton pendant la fonction Hover */
+
+.effect04::before{
+  content: attr(data-sm-link-text);
     color: #FFF;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 200;
-    opacity: 0.5;
-    position: absolute;
-    left: 35%;
-    top: 85%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(500%) scale(-0.1,20);
+          transform: translateY(500%) scale(-0.1,20);
 }
 
-.bouttonsuite:hover {
-    font-family: "Advent Pro", "Arial Black";
-    width: 125px;
-    height: 40px;
-    background: linear-gradient(45deg, #44A0B6, #22515C);
-    border-radius: 20px;
+.effect043::before{
+  content: attr(data-sm-link-text);
     color: #FFF;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 200;
-    opacity: 1;
-    position: absolute;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(500%) scale(-0.1,20);
+          transform: translateY(500%) scale(-0.1,20);
 }
+
+/* Effet du boutton après la fonction Hover */
+
+.effect04:hover::before{
+  letter-spacing: 0.05em;
+  -webkit-transform: translateY(0) scale(1,1);
+          transform: translateY(0) scale(1,1);
+}
+
+.effect043:hover::before{
+  letter-spacing: 0.05em;
+  -webkit-transform: translateY(0) scale(1,1);
+          transform: translateY(0) scale(1,1);
+}
+
+/* Responsive, lorsque la largeur est inférieur à un nombre de px alors les éléments changent de position */
+
+@media screen and (max-width: 880px) {
+
+    .centremilieu {
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .titre0lscriminal
+    {
+        font-size: clamp(12px, 2vh, 5px);
+    }
+
+    .fixenavcote
+    {
+        display: none;
+    }
+
+    .fondnavcote
+    {
+        position: fixed;
+        flex-direction: row;
+        align-content: center;
+        width: 100%;
+        height: 75px;
+        border-bottom: 1px solid #99aab5;
+    }
+
+    img.logolisteapuce {
+        width: 15px;
+        height: 15px;
+    }
+
+    .nav {
+      position: static;
+      align-items: center;
+      justify-content: center;
+      width: 60%;
+      height: 100%;
+      font-family: "Advent Pro", "Arial Black";
+      font-size: 1.7vw;
+    }
+
+    .listepuce
+    {
+        border-left: 1px solid #99aab5;
+        width: 20vw;
+        height: 100%;
+    }
+
+    .barrenav 
+    {
+      border-left: 0px solid #1cceff;
+      border-bottom: 7px solid #1cceff;
+    }
+
+    .logolisteapuce {
+        width: 1vw;
+        height: 10px;
+    }
+
+    .fondformulaire, .fondformulaire2 {
+      margin-top: 75px;
+      position: static;
+      align-items: center;
+      flex-flow: column;
+      overflow-y: scroll;
+    }
+
+    .formulaire, .formulaire2 {
+      height: 690px;
+    }
+
+    .question1 {
+      display: flex;
+      position: relative;
+      color: white;
+      overflow-y: auto;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 80vw;
+      height: 125px;
+      font-size: clamp(2vw, 0.5vw, 4vw);
+      font-family: 'Metropolis';
+      background-color: #2E2E2E;
+      box-shadow: 1px 1px 1px black; 
+      padding: 10px 25px 10px 25px;
+      margin: 15px 1vw 15px 1vw;
+    }
+
+    input
+    {
+      width: 1.4vw;
+      margin-right: 10px;
+      margin-top: 1vw;
+    }
+
+    .resultattext {
+        font-size: 1.9vw;
+    }
+
+    .btn {
+      font-size: 1.25vw;
+    }
+
+    .effect043 {
+    width: 20vw;
+    height: 5vw;
+    }
+}
+
+/* Responsive, lorsque la largeur est inférieur à un nombre de px alors les éléments changent de position */
+
+@media screen and (max-height: 310px) {
+
+    .centremilieu {
+        flex-direction: column;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .titre0lscriminal
+    {
+        font-size: clamp(12px, 2vh, 5px);
+    }
+
+    .fixenavcote
+    {
+        display: none;
+    }
+
+    .fondnavcote
+    {
+        position: fixed;
+        flex-direction: row;
+        align-content: center;
+        width: 100%;
+        height: 75px;
+        border-bottom: 1px solid #99aab5;
+    }
+
+    img.logolisteapuce {
+        width: 15px;
+        height: 15px;
+    }
+
+    .nav {
+      display: flex;
+      position: static;
+      align-items: center;
+      justify-content: center;
+      width: 60%;
+      height: 100%;
+      font-family: "Advent Pro", "Arial Black";
+      font-size: 1.7vw;
+    }
+
+    .listepuce
+    {
+        border-left: 1px solid #99aab5;
+        width: 20vw;
+        height: 100%;
+    }
+
+    .barrenav 
+    {
+        border-left: 0px solid #1cceff;
+        border-bottom: 7px solid #1cceff;
+    }
+
+    .logolisteapuce {
+        width: 1vw;
+        height: 10px;
+    }
+
+    .fondformulaire, .fondformulaire2 {
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row;
+        height: 100%;
+        overflow: scroll;
+        margin-top: 75px;
+    }
+
+    .formulaire, .formulaire2 {
+      height: 690px;
+    }
+
+    .resultattext {
+        font-size: 1.2vw;
+    }
+}
+
+/*
+==================================================================
+              
+==================================================================
+*/

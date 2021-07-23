@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/css/header.css">
+    <link type="text/css" rel="stylesheet" href="/css/navigation.css">
+    <link type="text/css" rel="stylesheet" href="/css/mesdossiers.css">
+    <link type="text/css" rel="stylesheet" href="/css/error.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="/image/icons/LS_Criminal_Logo.ico" />
+    <link rel="icon" type="image/png" href="/image/icons/LS_Criminal_Logo.ico" />
+    <title>LS Criminal - Mes Dossiers</title>
+</head>
+
+<body class="background">
+
+    <!-- Message d'erreur / success -->
+
+    <%- include('../partials/error'); %>
+
+    <!-- Header -->
+
+    <%- include('../partials/header'); %>
+
+        <!-- Navigation -->
+
+        <%- include('../partials/navigation'); %>
+
+            <!-- Header qui se situe sur le côté -->
+
+            <div class="centremilieu">
+
+                <%- include('../partials/navigation_superficielle'); %>
+
+                    <div class="background_opacity">
+
+
+                    </div>
+
+                    <div class="centrage">
+
+                        <div class="table-wrapper">
+                            <div class="container_changed">
+
+                                <a class="button_modified user_text" id="open_change_password" href="#">
+                                    <div class="user_text">
+                                        <b style="font-weight: bold; font-size: 16px;">+</b> Dossier
+                                    </div>
+                                </a>
+
+                            </div>
+                            <table class="fl-table">
+                                <thead>
+                                    <tr>
+                                        <th>PRÉNOM</th>
+                                        <th>NOM</th>
+                                        <th>DATE DE NAISSANCE</th>
+                                        <th>BACKGROUND</th>
+                                        <th>PLAN A</th>
+                                        <th>PLAN B</th>
+                                        <th>STATUT</th>
+                                        <th>DATE</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Malik</td>
+                                        <td>Stones</td>
+                                        <td>17 / 07 / 1990</td>
+                                        <td>
+                                            <a href="#" style="text-decoration: none; color: white;">
+                                            <span class="voir_background">
+                                                Plus
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-caret-down-fill" style="color: white;"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        <td>LSPD</td>
+                                        <td>BCSO</td>
+                                        <td>
+                                            <a href="#" style="text-decoration: none; color: white;">
+                                            <span class="statut">
+                                                En cours
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-caret-down-fill" style="color: white;"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        </td>
+                                        <td>17 / 17 / 17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Horacio</td>
+                                        <td>Laden</td>
+                                        <td>27 / 06 / 1987</td>
+                                        <td>
+                                            <a href="#" style="text-decoration: none; color: white;">
+                                            <span class="voir_background">
+                                                Plus
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-caret-down-fill" style="color: white;"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        </td>
+                                        <td>Families</td>
+                                        <td>Gangster Indépendant</td>
+                                        <td>
+                                            <a href="#" style="text-decoration: none; color: white;">
+                                            <span class="statut" style="background-color: rgb(124, 7, 7);">
+                                                Refusé
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-caret-down-fill" style="color: white;"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        </td>
+                                        <td>17 / 17 / 17</td>
+                                    </tr>
+                                <tbody>
+                            </table>
+                        </div>
+
+                        <%- include('../partials/folder_info'); %>
+
+                        <%- include('../partials/info_background'); %>
+            
+                        <%- include('../partials/send_folder'); %>
+
+                    </div>
+            </div>
+
+            <script src="/js/mesdossiers.js"></script>
+</body>
+
+</html>

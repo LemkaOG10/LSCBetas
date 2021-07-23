@@ -1,389 +1,360 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
 }
+
+/* Déclaration des polices importer */
 
 @font-face
 {
-    font-family: "Advent Pro";
-    src: url("../police/AdventPro-Bold.ttf");
+  font-family: "Advent Pro";
+  src: url("../police/AdventPro-Bold.ttf");
 }
-   
+ 
 @font-face
 { 
-    font-family: "Metropolis";
-    src: url("../police/Metropolis-Light.otf");
+  font-family: "Metropolis";
+  src: url("../police/Metropolis-Light.otf");
 }
+
+input
+{
+  width: 0.8vw;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+
+/* Barre de déroulement customisé */
+
+::-webkit-scrollbar {
+width: 5px;
+height: 5px;
+}
+::-webkit-scrollbar-button {
+width: 0px;
+height: 0px;
+}
+::-webkit-scrollbar-thumb {
+background: #1cceff;
+border: 31px none red;
+border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+background: #1cceff;
+}
+::-webkit-scrollbar-thumb:active {
+background: #131313;
+}
+::-webkit-scrollbar-track {
+background: #918989;
+border: 1px solid #131313;
+border-radius: 5px;
+}
+::-webkit-scrollbar-track:hover {
+background: #f2f2f2;
+}
+::-webkit-scrollbar-track:active {
+background: #f5f5f5;
+}
+::-webkit-scrollbar-corner {
+background: transparent;
+}
+
+
+/* Section Background, fond du site */
+
+.background {
+  position: fixed;
+  background-color: #131313;
+  height: 100%;
+  width: 100%;
+}
+
+/*
+==================================================================
+              HEADER NAVIGATION SUPÉRIEUR
+==================================================================
+*/
+
+/* Header qui délimite les divs qui seront à l'intérieur */
 
 .titre0
 {
-    width: 100%;
-    height: 10vh;
-    color: #7289da;
-    background-color: #0C0C0C;
-    border-bottom: 1px solid #99aab5;
-    position: fixed;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    z-index: 2;
-    
+  width: 100%;
+  height: 64px;
+  color: #7289da;
+  background-color: #0C0C0C;
+  border-bottom: 1px solid #99aab5;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 34;
+  overflow: hidden;
+  top: 0px;
 }
+
+/* Taille de la div titre0lscriminal */
+
+.c-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-right: 5%;
+  margin-left: 5%;
+
+}
+
+/* Taille de la div titre0lscriminal */
+
+.c-title_logo_lscriminal {
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+/* Titre LS Criminal dans le Header ainsi que sa fonction Hover et sa fonction qui enlève l'effet lien */
 
 .titre0lscriminal
 {
-    font-family: "Advent Pro", "Arial Black";
-    color: #1cceff;
-    opacity: 0.8;
-    font-size: 22px;
-    
+  font-family: "Advent Pro", "Arial Black";
+  font-size: clamp(12px, 2vh, 5px);
+  color: #1cceff;
+  opacity: 0.6;
 }
 
 .titre0lscriminal:hover
 {
-    font-family: "Advent Pro", "Arial Black";
-    color: #1cceff;
-    opacity: 1;
-    font-size: 23px;
-    
+  opacity: 1;
 }
 
-.titre0lscriminal:hover
-{
-    font-size: 25px;
-    font-family: "Advent Pro", "Arial Black";
-    color: #1cceff;
-    opacity: 0.9;
-    
+.titre0lscriminallink {
+  text-decoration: none;
 }
 
-.titre0link {
-    text-decoration: none;
-
-}
-
-.c-title {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-}
+/* Retrait de la liste ordonné l-social*/
 
 .l-social {
-    display: flex;
-    list-style-type: none;
-    flex-direction: row;
+  width: 40%;
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 2%;
 
 }
+
+.container_social {
+  margin-right: 10%;
+  height: 100%;
+  width: 100%;
+}
+
+/* Image LS Criminal disponible dans le Header ainsi que sa Fonction Hover */
 
 img.logo0
 {
-    width : 55px; 
-    opacity: 0.9;
-    margin-left: 40px;
-    
+  width : 25px; 
+  height: 25px;
+  opacity: 0.5;
+  margin-left: 100%;
+  
 }
 
 .logo0:hover
-{
+  {
     opacity: 1;
-    margin-left: 40px;
-}
+    margin-left: 100%;
+  }
 
-.twitch
+/* Image Twitch disponible dans le Header ainsi que sa Fonction Hover */
+
+.icone_social
 {
-
-    opacity: 0.5;
-    width : 35px; 
+  position: static;
+  margin-right: 100%;
+  opacity: 0.5;
+  width : 20px; 
+  height: 20px;
 }
 
-.youtube
+.icone_social:hover
 {
-    margin-right: 35px;
-    margin-left: 35px;
-    opacity: 0.5;
-    width : 35px; 
+  opacity: 1;
 }
+  
+/*
+==================================================================
+              NAVIGATION GAUCHE
+==================================================================
+*/
 
-.twitter
+/* Permet d'aligner les deux divs principaux */
+
+.centremilieu
 {
-    margin-right: 35px;
-    opacity: 0.5;
-    width : 35px; 
+  position: static;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  text-decoration: none;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  margin-top: 64px;
 }
 
-.instagram
-{
-    margin-right: 45px;
-    opacity: 0.5;
-    width : 35px; 
+.fixenavcote {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  position: fixed;
+  overflow: hidden;
+  text-decoration: none;
+  background-color: #0C0C0C;
+  width: 16.67%;
+  height: 100%;
+  top: 64px;
+  border-right: 1px solid #99aab5;
+  z-index: 32;
 }
 
-.twitch:hover
-{
-    opacity: 1;
-    width : 35px; 
-}
-
-.youtube:hover
-{
-    opacity: 1;
-    width : 35px; 
-}
-
-.twitter:hover
-{
-    opacity: 1;
-    width : 35px; 
-}
-
-.instagram:hover
-{
-    opacity: 1;
-    width : 35px; 
-}
-
-.background {
-    position: fixed;
-    background-color: #131313;
-    height: 100%;
-    width: 100%;
-}
-
+/* Fond Navigation sur la gauche */
 
 .fondnavcote
 {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    position: fixed;
-    background-color: #0C0C0C;
-    width: 20%;
-    height: 100%;
-    top: 10vh;
-    z-index: 1;
-    border-right: 1px solid #99aab5;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  position: static;
+  overflow: hidden;
+  text-decoration: none;
+  background-color: #0C0C0C;
+  width: 20%;
+  /* height: 1366px; */
+  height: 500px;
+  border-right: 1px solid #99aab5;
+  z-index: 33;
 }
+
+/* Fond des liste puce Nav qui permet au list puce de prendre que 40% de la fondnavcote*/
+
+/*
 
 .listepucenav
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    font-family: "Advent Pro", "Arial Black";
-    overflow: hidden;
-    text-decoration: none;
-    color: white;
-    font-size: 150%;
-    background-color: #0C0C0C;
-    width: 100%;
-    height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Advent Pro", "Arial Black";
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+  font-size: 100%;
+  background-color: #0C0C0C;
+  width: 100%;
+  height: 40%;
+} */
+
+/* Permet de d'appliquer des attributs ainsi que la Fonction Hover à toutes les list à puce présent dans la div listpuce */
+
+.listepuce
+{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  position: static;
+  text-decoration: none;
+  border-bottom: 1px solid #99aab5;
+  color: white;
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
 }
 
-.monprofil
+.listepuce:hover
 {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    position: static;
-    overflow: hidden;
-    z-index: 3;
-    text-decoration: none;
-    border-bottom: 1px solid #99aab5;
-    color: white;
-    list-style-type: none;
-    width: 100%;
-    height: 33.3%;
+  opacity: 0.7;
+  background-color: #1cceff;
 }
 
-.monprofil:hover
+/* Retire le lien des liste à puce */
+
+.listepucelien
 {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    position: static;
-    overflow: hidden;
-    z-index: 3;
-    text-decoration: none;
-    color: white;
-    list-style-type: none;
-    background-color: #1cceff;
-    width: 100%;
-    height: 33.3%;
+  text-decoration: none;
+  color: white;
 }
 
-.monprofillien
-{
-    text-decoration: none;
-    color: white;
+/* Permet d'ajouter une bordure à Gauche de la liste quand on se trouve dans la Page */
+
+.barrenav {
+  border-left: 7px solid #1cceff;
 }
 
-.logoprofil
+/* Permet d'ajouter des attributs au logo de la liste à puce gauche */
+
+.logolisteapuce
 {
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
+  width: 20px;
+  height: 20px;
+  /* margin-right: 20px; */
 }
 
-.questionnaire
-{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    position: static;
-    overflow: hidden; 
-    z-index: 4;
-    text-decoration: none;
-    color: white;
-    list-style-type: none;
-    border-bottom: 1px solid #99aab5;
-    width: 100%;
-    height: 33.3%;
+/* Permet de bien aligner respectivement les div nav et alignicon entre elle */
+
+.nav {
+  display: flex;
+  position: static;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+  font-family: "Advent Pro", "Arial Black";
+  font-size: 1.2vw;
 }
 
-.questionnaire:hover
-{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    position: static;
-    overflow: hidden; 
-    z-index: 4;
-    text-decoration: none;
-    color: white;
-    list-style-type: none;
-    background-color: #1cceff;
-    border-bottom: 1px solid #99aab5;
-    width: 100%;
-    height: 33.3%;
+.alignicon {
+  display: flex;
+  position: static;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 20%;
+}  
+
+/*
+==================================================================
+              BLOCK DEPOT DE DOSSIER
+==================================================================
+*/
+
+.centrage {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
 }
 
-.questionnairelien
-{
-    text-decoration: none;
-    color: white;
+.fenetre {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 
-.logoquestionnaire
-{
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
-}
-
-.dossier
-{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    position: static;
-    overflow: hidden; 
-    z-index: 4;
-    text-decoration: none;
-    color: white;
-    list-style-type: none;
-    border-bottom: 1px solid #99aab5;
-    border-left: 15px solid #1cceff;
-    width: 100%;
-    height: 33.3%;
-}
-
-.dossier:hover
-{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    position: static;
-    overflow: hidden; 
-    z-index: 4;
-    text-decoration: none;
-    color: white;
-    list-style-type: none;
-    background-color: #1cceff;
-    border-bottom: 1px solid #99aab5;
-    width: 100%;
-    height: 33.3%;
-}
-
-.dossierlien
-{
-    text-decoration: none;
-    color: white;
-}
-
-.logodossier
-{
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
-}
-
-.besoindaide
-{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    position: static;
-    overflow: hidden;
-    z-index: 5;
-    text-decoration: none;
-    color: white;
-    list-style-type: none;
-    border-bottom: 1px solid #99aab5;
-    width: 100%;
-    height: 33.3%;
-}
-
-.besoindaide:hover
-{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    position: static;
-    overflow: hidden;
-    z-index: 5;
-    text-decoration: none;
-    color: white;
-    list-style-type: none;
-    background-color: #1cceff;
-    border-bottom: 1px solid #99aab5;
-    width: 100%;
-    height: 33.3%;
-}
-
-.besoindaidelien
-{
-    text-decoration: none;
-    color: white;
-}
-
-.logobesoindaide
-{
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
-}
-
-.fondformulaire
-{
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    top: 10vh;
-    left: 17%;
-}
+/* Titre du block descriptif */
 
 .ecriturequestion1
 {
@@ -393,6 +364,8 @@ img.logo0
     color: #1cceff;
 }
 
+/* Détails des conditions pour envoyer le dossier */
+
 .question1
 {
     position: static;
@@ -401,19 +374,14 @@ img.logo0
     overflow: hidden;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     width: 45%;
-    height: 25%;
-    font-size: 85%;
+    height: 50%;
+    font-size: 0.7vw;
     font-family: 'Metropolis';
     background-color: #2E2E2E;
     box-shadow: 1px 1px 1px black; 
-    padding: 10px 0px 10px 25px;
-    margin-left: 20%;
-    margin-top: 1%;
-}
-
-.margeetape {
-    margin-left: 25px;
+    margin-top: 5%;
 }
 
 .couleuralerte {
@@ -426,43 +394,198 @@ img.logo0
     color: #1cceff;
 }
 
-.bouttonsuite {
-    font-family: "Advent Pro", "Arial Black";
-    width: 125px;
-    height: 40px;
-    background: linear-gradient(45deg, #44A0B6, #22515C);
-    border-radius: 20px;
-    color: #FFF;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 200;
-    opacity: 0.5;
-    position: absolute;
-    left: 35%;
-    top: 85%;
+/* Centrage de l'input */
+
+.page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    position: static;
+    flex-direction: column;
+    margin-top: 5%;
 }
 
-.bouttonsuite:hover {
-    font-family: "Advent Pro", "Arial Black";
-    width: 125px;
-    height: 40px;
-    background: linear-gradient(45deg, #44A0B6, #22515C);
-    border-radius: 20px;
-    color: #FFF;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 200;
-    opacity: 1;
-    position: absolute;
+/* Cadre qui englobe toutes les parties de l'annonce dossier*/
+
+.englobedossier {
+  position: static;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
-/*
-=====
-RESET STYLES
-=====
-*/
+
+/* Aprés envoie du dossier une confirmation de l'envoie du dossier s'affiche */
+
+.dossierenvoyer {
+  display: flex;
+  position: static;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0b5400;
+  width: 100%;
+  height: 20%;
+  font-size: 1vw;
+  color: white;
+}
+
+.reponse {
+  display: flex;
+  color: white;
+  margin-right: 15%;
+}
+
+/* Cadre du dossier qui énonce l'état du dossier */
+
+.cadredossier {
+  background-color: #3d4347;
+  width: 77%;
+  height: 20%;
+  display: flex;
+  position: static;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  margin-left: 4.5%;
+  margin-top: 25px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.etatdossier {
+  position: static;
+  background-color: #1983a0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1vw;
+  margin-left: 5%;
+  margin-right: 3%;
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 10vw;
+  height: 50%;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.messageannonce {
+  position: static;
+  font-size: 1vw;
+  width: 50vw;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.fondliengoogle {  
+  display: none;
+  background-color: #4c5257;
+  width: 77%;
+  height: 50%;
+  position: static;
+  align-items: flex-start;
+  overflow: hidden;
+  color: white;
+  margin-left: 4.5%;
+  margin-top: -0.5%;
+  border-radius: 0px 0px 10px 10px;
+  border-bottom: 1px solid white ;
+}
+
+.liengoogle {
+  position: static;
+  margin-top: 15px;
+  margin-left: 5%;
+  color: white;
+}
+
+/* Petite flèche qui permet d'ouvrir le menu dossier */
+
+.flechedossier {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10vw;
+  height: 10%;
+  margin-left: 2%;
+  margin-right: 5%;
+  text-decoration: none;
+  color: white;
+}
+
+.flechedossier2 {
+  position: static;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 10vw;
+  height: 10%;
+  margin-left: 2%;
+  margin-right: 5%;
+  text-decoration: none;
+  color: #1cceff;
+}
+
+svg:not(:root).svg-inline--fa {
+  overflow: visible;
+  position: static;
+  margin-left: 65%;
+  text-decoration: none;
+}
+
+.svg-inline--fa.fa-w-10 {
+  width: .625em;
+  text-decoration: none;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -.125em;
+  text-decoration: none;
+  color: white;
+}
+
+.svg-inline--fa2 {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -.125em;
+  text-decoration: none;
+  transform: rotate(90deg); /* Équivalent à rotateZ(45deg) */
+  color: #1cceff;
+}
+
+.svg-inline--fa2:hover {
+  color: white;
+}
+
+.svg-inline--fa:hover {
+  color: #1cceff;
+}
+
+/* Div de l'input */
+
+.input {
+  display: flex;
+  flex-direction: column;
+  position: static;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+}
+
+/* Retrait du carde de l'input */
 
 .field__input{ 
-  --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #ffffff);
+  --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, red);
   
   background-color: transparent;
   border-radius: 0;
@@ -484,26 +607,24 @@ RESET STYLES
   color: var(--uiFieldPlaceholderColor);
 }
 
-/*
-=====
-CORE STYLES
-=====
-*/
+/* Style de l'input */
 
-.field{
+.field {
+  display: none;
   --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
-  --uiFieldPaddingRight: var(--fieldPaddingRight, 1rem);
-  --uiFieldPaddingLeft: var(--fieldPaddingLeft, 1rem);   
+  --uiFieldPaddingRight: var(--fieldPaddingRight);
+  --uiFieldPaddingLeft: var(--fieldPaddingLeft);   
   --uiFieldBorderColorActive: var(--fieldBorderColorActive, #1cceff);
+  --fieldBorderColor: #D1C4E9;
+  --fieldBorderColorActive: #1cceff;
 
-  display: var(--fieldDisplay, inline-flex);
   position: relative;
-  font-size: var(--fieldFontSize, 1rem);
+  font-size: var(--fieldFontSize, 1vw);
 }
 
 .field__input{
   box-sizing: border-box;
-  width: var(--fieldWidth, 58%);
+  width: var(--fieldWidth, 100%);
   height: var(--fieldHeight, 3rem);
   padding: var(--fieldPaddingTop, 1.25rem) var(--uiFieldPaddingRight) var(--fieldPaddingBottom, .5rem) var(--uiFieldPaddingLeft);
   border-bottom: var(--uiFieldBorderWidth) solid var(--fieldBorderColor, #1cceff);  
@@ -540,7 +661,7 @@ CORE STYLES
     cursor: text;
 
     position: absolute;
-    top: 0;
+    top: -10px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -549,7 +670,7 @@ CORE STYLES
 .field__label-wrap::after{
   content: "";
   box-sizing: border-box;
-  width: 58%;
+  width: 100%;
   height: 0;
   opacity: 0;
 
@@ -581,9 +702,7 @@ CORE STYLES
   top: var(--fieldHintTopHover, .25rem);
 }
 
-/* 
-effect 1
-*/
+/* Effet de l'input qui se charge */
 
 .field_v1 .field__label-wrap::after{
   border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColorActive);
@@ -591,9 +710,7 @@ effect 1
   will-change: opacity;
 }
 
-/* 
-effect 2
-*/
+/* Effet de l'input qui se charge et qui remonte */
 
 .field_v2 .field__label-wrap{
   overflow: hidden;
@@ -611,9 +728,7 @@ effect 2
   transition-delay: 0;
 }
 
-/*
-effect 3
-*/
+/* Effet de l'input */
 
 .field_v3 .field__label-wrap::after{
   border: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColorActive);
@@ -625,97 +740,456 @@ effect 3
   height: 100%;
 }
 
+
 /*
-=====
-LEVEL 4. SETTINGS
-=====
+==================================================================
+                BOUTTON ENVOYER
+==================================================================
 */
 
-.field{
-  --fieldBorderColor: #D1C4E9;
-  --fieldBorderColorActive: #1cceff;
+/* Grande Div qui permet de se flex-direction column avec la div englobequestion et de centrer le boutton */
+
+.Englobebouttonfixe
+{
+  height: 100%;
+  width: 100%;
+  position: static;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 0%;
 }
 
-/*
-=====
-DEMO
-=====
-*/
-
-.page{
+.Englobebouttonfixe3
+{
+    height: 100%;
+    width: 100%;
     position: static;
-    display: flex;
-    flex-direction: column;
-    margin-left: 20%;
-    margin-top: 1%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0%;
 }
 
-/*
-=====
-BOUTTON ENVOYÉ
-=====
-*/
+/* Base du boutton qui alligne son contenu */
 
-.container-login100-form-btn {
+.buttons {
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 35%;
+/*   padding: 2em 0em; */
+}
+
+.buttons3 {
     position: static;
-    width: 10%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 40%;
-    margin-top: 1%;
-  }
-  
-  .login100-form-btn {
-    font-family: "Advent Pro";
-    font-size: 16px;
-    color: #ffffff;
-    line-height: 1.2;
-  
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
-    min-width: 120px;
-    height: 50px;
-    border-radius: 25px;
-  
-    background: #9152f8;
-    background: -webkit-linear-gradient(bottom, #007697, #005167, white);
-    background: -o-linear-gradient(bottom, #007697, #005167, white);
-    background: -moz-linear-gradient(bottom, #007697, #005167, white);
-    background: linear-gradient(bottom, #007697, #005167, white);
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    background-color: #2E2E2E;
+  /*   padding: 2em 0em; */
+  }
+
+/* Texte présent au-dessus du boutton */
+
+.h1boutton {
+  text-align: left;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.4em;
+  font-size: 1em;
+}
+
+.pboutton {
+  text-align: left;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  font-size: 0.8em;
+  margin: 0 0 2em;
+}
+
+/* Texte présent dans le boutton */
+
+.btn {
+  letter-spacing: 0.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.9vw;
+  font-family: 'Metropolis';
+  font-weight: 900;
+  line-height: 45px;
+  width: 100%;
+  position: static;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+/* Background du boutton ainsi que son contour */
+
+.effect04 {
+  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+  display: var(--uismLinkDisplay);
+  color: #ffffff;
+  outline: solid  2px #ffffff;
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  width: 125px;
+  height: 50px;
+}
+
+.effect043 {
+  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+  display: var(--uismLinkDisplay);
+  color: #ffffff;
+  outline: solid  2px #ffffff;
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  width: 125px;
+  height: 50px;
+}
+
+/* Effet du boutton */
+
+.effect04::before,
+.effect04 span{
+    margin: 0 auto;
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    transition-duration: 0.4s;
+}
+
+.effect043::before,
+.effect043 span{
+    margin: 5px 5px 5px 5px;
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    transition-duration: 0.4s;
+}
+
+/* Effet du boutton avec la fonction Hover*/
+
+.effect04:hover{
+
+  background-color: #1cceff;
+}
+
+.effect043:hover{
+
+  background-color: #1cceff;
+}
+
+/* Effet lorsque le span apparaît du boutton avec la fonction Hover */
+
+.effect04:hover span{
+  -webkit-transform: translateY(-400%) scale(-0.1,20);
+          transform: translateY(-400%) scale(-0.1,20);
+}
+
+.effect043:hover span{
+  -webkit-transform: translateY(-400%) scale(-0.1,20);
+          transform: translateY(-400%) scale(-0.1,20);
+}
+
+/* Effet du boutton pendant la fonction Hover */
+
+.effect04::before{
+  content: attr(data-sm-link-text);
+    color: #FFF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(500%) scale(-0.1,20);
+          transform: translateY(500%) scale(-0.1,20);
+}
+
+.effect043::before{
+  content: attr(data-sm-link-text);
+    color: #FFF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(500%) scale(-0.1,20);
+          transform: translateY(500%) scale(-0.1,20);
+}
+
+/* Effet du boutton après la fonction Hover */
+
+.effect04:hover::before{
+  letter-spacing: 0.05em;
+  -webkit-transform: translateY(0) scale(1,1);
+          transform: translateY(0) scale(1,1);
+}
+
+.effect043:hover::before{
+  letter-spacing: 0.05em;
+  -webkit-transform: translateY(0) scale(1,1);
+          transform: translateY(0) scale(1,1);
+}
+
+
+/* Responsive, lorsque la largeur est inférieur à un nombre de px alors les éléments changent de position */
+
+@media screen and (max-width: 880px) {
+
+  .centremilieu {
+      flex-direction: column;
+      overflow: auto;
+  }
+
+  .titre0lscriminal
+  {
+      font-size: clamp(12px, 2vh, 5px);
+  }
+
+  .fixenavcote
+  {
+      display: none;
+  }
+
+  .fondnavcote
+  {
+      position: fixed;
+      flex-direction: row;
+      align-content: center;
+      width: 100%;
+      height: 75px;
+      border-bottom: 1px solid #99aab5;
+  }
+
+  img.logolisteapuce {
+      width: 15px;
+      height: 15px;
+  }
+
+  .nav {
+    display: flex;
     position: static;
-  
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
-    
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    font-family: "Advent Pro", "Arial Black";
+    font-size: 1.7vw;
   }
-  
-  .login100-form-btn::before {
-    content: "";
+
+  .listepuce
+  {
+      border-left: 1px solid #99aab5;
+      width: 20vw;
+      height: 100%;
+  }
+
+  .barrenav 
+  {
+      border-left: 0px solid #1cceff;
+      border-bottom: 7px solid #1cceff;
+  }
+
+  .logolisteapuce {
+      width: 1vw;
+      height: 10px;
+  }
+
+  .centrage {
+      position: static;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 100%;
+      height: 900px;
+      margin-top: 75px;
+  }
+
+  .fenetre {
     position: static;
-    border-radius: 25px;
-    opacity: 1;
-  
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 650px;
+    width: 100%;
   }
-  
-  .login100-form-btn:hover {
-    color: #fff;
+
+  .question1 {
+      position: static;
+      display: flex;
+      overflow: hidden;
+      width: 75%;
+      height: 250px;
+      font-size: 1.5vw;
   }
-  
-  .login100-form-btn:hover:before {
-    opacity: 0;
+
+  .btn {
+    font-size: 2vw;
   }
+
+  .field__label {
+    font-size: 2vw;
+  }
+
+  .field__input {
+    font-size: 1.7vw;
+  }
+
+  .messageannonce {
+    position: static;
+    font-size: 1.5vw;
+    width: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .etatdossier {
+    font-size: 1.4vw;
+  }
+
+  .dossierenvoyer {
+    font-size: 2vw;
+  }
+}
+
+/* Responsive, lorsque la largeur est inférieur à un nombre de px alors les éléments changent de position */
+
+@media screen and (max-height: 310px) {
+
+  .centremilieu {
+      flex-direction: column;
+      overflow: auto;
+  }
+
+  .titre0lscriminal
+  {
+      font-size: clamp(12px, 2vh, 5px);
+  }
+
+  .fixenavcote
+  {
+      display: none;
+  }
+
+  .fondnavcote
+  {
+      position: fixed;
+      flex-direction: row;
+      align-content: center;
+      width: 100%;
+      height: 75px;
+      border-bottom: 1px solid #99aab5;
+  }
+
+  img.logolisteapuce {
+      width: 15px;
+      height: 15px;
+  }
+
+  .nav {
+    display: flex;
+    position: static;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    font-family: "Advent Pro", "Arial Black";
+    font-size: 1.7vw;
+  }
+
+  .listepuce
+  {
+      border-left: 1px solid #99aab5;
+      width: 20vw;
+      height: 100%;
+  }
+
+  .barrenav 
+  {
+      border-left: 0px solid #1cceff;
+      border-bottom: 7px solid #1cceff;
+  }
+
+  .logolisteapuce {
+      width: 1vw;
+      height: 10px;
+  }
+
+  .centrage {
+      position: static;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 100%;
+      height: 900px;
+      margin-top: 75px;
+  }
+
+  .fenetre {
+    position: static;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 650px;
+    width: 100%;
+  }
+
+  .question1 {
+      position: static;
+      display: flex;
+      overflow: hidden;
+      margin-left: 3%;
+      margin-right: 3%;
+      width: 94%;
+      height: 150px;
+      font-size: 1.5vw;
+  }
+
+  .btn {
+    font-size: 2vw;
+  }
+
+  .field__label {
+    font-size: 2vw;
+  }
+
+  .field__input {
+    font-size: 1.7vw;
+  }
+
+  .messageannonce {
+    position: static;
+    font-size: 1.5vw;
+    width: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .etatdossier {
+    font-size: 1.4vw;
+  }
+
+  .dossierenvoyer {
+    font-size: 2vw;
+  }
+}
+
+  
+/*
+==================================================================
+                
+==================================================================
+*/

@@ -1,0 +1,549 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Déclaration des polices importer */
+
+@font-face
+{
+  font-family: "Advent Pro";
+  src: url("../police/AdventPro-Bold.ttf");
+}
+ 
+@font-face
+{ 
+  font-family: "Metropolis";
+  src: url("../police/Metropolis-Light.otf");
+}
+
+input
+{
+  width: 25px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* Barre de déroulement customisé */
+
+::-webkit-scrollbar {
+width: 5px;
+height: 5px;
+}
+::-webkit-scrollbar-button {
+width: 0px;
+height: 0px;
+}
+::-webkit-scrollbar-thumb {
+background: #1cceff;
+border: 31px none red;
+border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+background: #1cceff;
+}
+::-webkit-scrollbar-thumb:active {
+background: #131313;
+}
+::-webkit-scrollbar-track {
+background: #918989;
+border: 1px solid #131313;
+border-radius: 5px;
+}
+::-webkit-scrollbar-track:hover {
+background: #f2f2f2;
+}
+::-webkit-scrollbar-track:active {
+background: #f5f5f5;
+}
+::-webkit-scrollbar-corner {
+background: transparent;
+}
+
+/*
+==================================================================
+              NAVIGATION GAUCHE
+==================================================================
+*/
+
+/* Div qui englobe la div superficielle de la navigation et celle de la page */
+
+.centremilieu {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: 64px;
+  z-index: -1;
+  overflow: auto;
+}
+
+/*
+==================================================================
+                FORMULAIRE 1 & 2
+==================================================================
+*/
+
+/* Fond du questionnaire 1 & 2 qui délimitera la div qui englobe les toutes questions */
+
+.fondformulaire
+{
+    position: static;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 874px;
+}
+
+.fondformulaire2
+{
+    position: static;
+    display: none;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 874px;
+}
+
+/* Formulaire du questionnaire qui se trouve dans la div fondformulaire et délimite toutes les toutes questions */
+
+.formulaire
+{
+    position: static;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.formulaire2
+{
+    position: static;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 100%;
+}
+
+/* Permet de bien classer les divs questions1 l'une à côté de l'autre */
+
+.wrap {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 969px;
+}
+
+/* Annonce du Résultat du questionnaire */
+
+.resultatquestionnaire {
+    position: static;
+    flex-direction: row;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 49px;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #500000;
+    color: white;
+}
+
+.resultattext {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    margin-right: 5%;
+    margin-left: 8%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-family: "Metropolis";
+}
+
+
+/* Div qui permet d'ajouter des attributs au block ou les questions sont contenu || ecriturequestion1 permet de modifier la question */
+
+.ecriturequestion1
+{
+    position: static;
+    display: flex;
+    font-size: 90%;
+    font-family: 'Metropolis';
+    color: #1cceff;
+    white-space: normal;
+}
+
+.question1
+{
+    display: flex;
+    position: relative;
+    color: white;
+    flex-direction: column;
+    justify-content: space-around;
+    white-space: nowrap;
+    width: 600px;
+    height: 20%;
+    font-size: 12.5px;
+    font-family: 'Metropolis';
+    background-color: #2E2E2E;
+    box-shadow: 1px 1px 1px black; 
+    padding: 10px 25px 10px 25px;
+    margin: 15px 1vw 15px 1vw;
+    white-space: normal;
+}
+
+.content_question {
+  position: static;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  white-space: normal;
+  margin-top: 15px;
+}
+
+.question {
+  position: static;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  white-space: normal;
+}
+
+/* Grande Div qui permet de se flex-direction column avec la div englobequestion et de centrer le boutton */
+
+.Englobebouttonfixe
+{
+    position: static;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 20%;
+    padding: 10px 0px 10px 10px;
+    margin: 5px 0px 5px 0px;
+    z-index: 60;
+}
+
+.Englobebouttonfixe3
+{
+    height: 80%;
+    width: 10vw;
+    position: static;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 60;
+    margin-right: 2%;
+}
+
+/* Base du boutton qui alligne son contenu */
+
+.buttons {
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 35%;
+  margin-top: 1.5%;
+/*   padding: 2em 0em; */
+}
+
+.buttons3 {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    background-color: #2E2E2E;
+  /*   padding: 2em 0em; */
+  }
+
+/* Texte présent au-dessus du boutton */
+
+.h1boutton {
+  text-align: left;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.4em;
+  font-size: 1em;
+}
+
+.pboutton {
+  text-align: left;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  font-size: 0.8em;
+  margin: 0 0 2em;
+}
+
+/* Texte présent dans le boutton */
+
+.btn {
+  letter-spacing: 0.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.9vw;
+  font-family: 'Metropolis';
+  font-weight: 900;
+  line-height: 45px;
+  width: 100%;
+  position: static;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+/* Background du boutton ainsi que son contour */
+
+.effect04 {
+  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+  display: var(--uismLinkDisplay);
+  color: #ffffff;
+  outline: solid  2px #ffffff;
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  width: 125px;
+  height: 50px;
+}
+
+.effect043 {
+  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+  display: var(--uismLinkDisplay);
+  color: #ffffff;
+  outline: solid  2px #ffffff;
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  width: 125px;
+  height: 50px;
+}
+
+/* Effet du boutton */
+
+.effect04::before,
+.effect04 span{
+    margin: 0 auto;
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    transition-duration: 0.4s;
+}
+
+.effect043::before,
+.effect043 span{
+    margin: 5px 5px 5px 5px;
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    transition-duration: 0.4s;
+}
+
+/* Effet du boutton avec la fonction Hover*/
+
+.effect04:hover{
+
+  background-color: #1cceff;
+}
+
+.effect043:hover{
+
+  background-color: #1cceff;
+}
+
+/* Effet lorsque le span apparaît du boutton avec la fonction Hover */
+
+.effect04:hover span{
+  -webkit-transform: translateY(-400%) scale(-0.1,20);
+          transform: translateY(-400%) scale(-0.1,20);
+}
+
+.effect043:hover span{
+  -webkit-transform: translateY(-400%) scale(-0.1,20);
+          transform: translateY(-400%) scale(-0.1,20);
+}
+
+/* Effet du boutton pendant la fonction Hover */
+
+.effect04::before{
+  content: attr(data-sm-link-text);
+    color: #FFF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(500%) scale(-0.1,20);
+          transform: translateY(500%) scale(-0.1,20);
+}
+
+.effect043::before{
+  content: attr(data-sm-link-text);
+    color: #FFF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(500%) scale(-0.1,20);
+          transform: translateY(500%) scale(-0.1,20);
+}
+
+/* Effet du boutton après la fonction Hover */
+
+.effect04:hover::before{
+  letter-spacing: 0.05em;
+  -webkit-transform: translateY(0) scale(1,1);
+          transform: translateY(0) scale(1,1);
+}
+
+.effect043:hover::before{
+  letter-spacing: 0.05em;
+  -webkit-transform: translateY(0) scale(1,1);
+          transform: translateY(0) scale(1,1);
+}
+
+/* Ipad Pro */
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+/* Ipad */
+
+@media screen and (max-width: 768px) {
+  
+
+}
+
+@media screen and (max-width: 673px) {
+
+  .question1 {
+    width: 500px;
+  }
+
+}
+
+/* Surface Duo */
+
+@media screen and (max-width: 575px) {
+
+  .question1 {
+    width: 400px;
+  }
+
+}
+
+@media screen and (max-width: 575px) {
+
+  .question1 {
+    width: 350px;
+  }
+
+}
+
+/* Iphone 6/7/8 Plus & Pixel 2 XL*/
+
+
+@media screen and (max-width: 414px) {
+
+  .question1 {
+    width: 250px;
+    height: 350px;
+  }
+
+  .question {
+    margin-left: 15px;
+  }
+
+  input {
+    width: 35px;
+    height: 35px;
+  }
+
+  .resultattext {
+    font-size: 9px;
+}
+
+}
+
+/* Iphone X & Iphone 6/7/8 */
+
+@media screen and (max-width: 375px) {
+
+}
+
+/* Moto G4 & Galaxy */
+
+@media screen and (max-width: 360px) {
+
+  .resultattext {
+    font-size: 8px;
+}
+
+}
+
+/* Iphone 5/SE */
+
+@media screen and (max-width: 325px) {
+
+  .question1 {
+    width: 200px;
+  }
+
+  .resultattext {
+    font-size: 7px;
+}
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
+/* Galaxy Fold */
+
+@media screen and (max-width: 280px) {
+
+  .question1 {
+    width: 180px;
+    height: 600px;
+  }
+
+  input {
+    width: 70px;
+    height: 70px;
+  }
+
+  .resultattext {
+    font-size: 6px;
+}
+
+}
+
+/*
+==================================================================
+              
+==================================================================
+*/

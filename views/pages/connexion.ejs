@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/css/header.css">
+	<link type="text/css" rel="stylesheet" href="/css/connexion.css">
+    <link type="text/css" rel="stylesheet" href="/css/error.css">
+	<link rel="icon" type="image/png" href="/image/icons/LS_Criminal_Logo.ico" />
+	<title>LS Criminal - Connexion</title>
+</head>
+
+<body class="background">
+
+    <!-- Message d'erreur / success -->
+
+    <%- include('../partials/error'); %>
+
+    <!-- Header -->
+
+    <%- include('../partials/header'); %>
+
+	<div class="centrage">
+		<form class="form-align" action="/connexion" method="POST">
+			<div class="login100-form-logo">
+				<img class="logo_ls" src="/image/LS_Criminal_Logo.png" />
+			</div>
+
+			<div class="login100-form-title">
+				CONNEXION
+			</div>
+
+			<div class="wrap-input100" data-validate="Entrer Adresse Mail">
+				<input class="input100" type="email" name="email" placeholder="Adresse Mail">
+				<span class="focus-input100" data-placeholder="&#xf207;"></span>
+			</div>
+
+			<div class="wrap-input100" data-validate="Entrer Mot de Passe">
+				<input class="input100" type="password" name="password" placeholder="Mot de passe">
+				<span class="focus-input100" data-placeholder="&#xf207;"></span>
+			</div>
+
+			<div class="contact100-form-checkbox">
+				<input class="input-checkbox100" id="ckb1" type="checkbox" name="Memoriser">
+				<label class="label-checkbox100" for="ckb1">
+					Mémoriser
+				</label>
+			</div>
+
+			<div class="container-login100-form-btn">
+				<button class="login100-form-btn">
+					Connexion
+				</button>
+			</div>
+
+
+			<div class="text-center">
+				<div class="txt1">
+					<a class="txt1" href="motdepasseoublie">
+						Mot de passe oublié ?
+					</a>
+				</div>
+
+				<div class="txt1">
+					<a class="txt1" href="inscription">
+						S'inscrire ?
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>

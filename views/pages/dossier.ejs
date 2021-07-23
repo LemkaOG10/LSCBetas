@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/css/header.css">
+    <link type="text/css" rel="stylesheet" href="/css/navigation.css">
+    <link type="text/css" rel="stylesheet" href="/css/dossier.css">
+    <link type="text/css" rel="stylesheet" href="/css/error.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="/image/icons/LS_Criminal_Logo.ico" />
+    <link rel="icon" type="image/png" href="/image/icons/LS_Criminal_Logo.ico" />
+    <title>LS Criminal - Dossier</title>
+</head>
+
+<body class="background">
+
+    <!-- Message d'erreur / success -->
+
+    <%- include('../partials/error'); %>
+
+    <!-- Header -->
+
+    <%- include('../partials/header'); %>
+
+        <!-- Navigation -->
+
+        <%- include('../partials/navigation'); %>
+
+            <!-- Header qui se situe sur le côté -->
+
+            <div class="centremilieu">
+
+                <%- include('../partials/navigation_superficielle'); %>
+
+                    <div class="background_opacity">
+
+
+                    </div>
+
+                    <div class="centrage">
+
+                        <%- include('../partials/folder_info'); %>
+
+                        <%- include('../partials/send_folder'); %>
+
+
+                    </div>
+
+
+            </div>
+
+            <script src="/js/dossier.js"></script>
+</body>
+
+</html>

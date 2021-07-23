@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/css/header.css">
+    <link type="text/css" rel="stylesheet" href="/css/navigation.css">
+    <link type="text/css" rel="stylesheet" href="/css/accueil.css">
+    <link type="text/css" rel="stylesheet" href="/css/error.css">
+    <link rel="icon" type="image/png" href="/image/icons/LS_Criminal_Logo.ico" />
+    <title>LS Criminal - Accueil</title>
+</head>
+
+<body class="background">
+
+    <!-- Message d'erreur / success -->
+
+    <%- include('../partials/error'); %>
+
+    <!-- Header -->
+
+    <%- include('../partials/header'); %>
+
+    <div class="scrolldiv">
+        <div class="bienvenu">
+
+            <div class="ish">
+
+                <div class="text">
+                    <p class="bienvenutitre">Bienvenu sur LS Criminal</p>
+                    <p class="bienvenutext"></br></br></br</br></br>LS Criminal est un serveur GTA RP qui vous laisse
+                        libre dans la créativité de vos scènes. Profitez d'une expérience </br></br>hors du commun.
+                        Faites
+                        vous
+                        des
+                        rencontres, développez votre personnage et surtout prenez du
+                        plaisir.</br></br></p>
+                    </p>
+
+                    <p class="nousvous"> Nous vous attendons nombreux !</p>
+                </div>
+
+                <!-- Boutton Whitelist & Discord -->
+
+                <div class="boutton">
+
+                    <div class="Englobebouttonfixe3">
+                        <div class="buttons3">
+                            <!--  <h1 class="h1boutton">Vous ne pourrez plus revenir sur vos pas ...</h1>
+                    <p class="pboutton">Cliquez pour passer à la suite</p>
+-->
+                            <a href="connexion" class="btn effect043" id="bouttonwhitelist"
+                                data-sm-link-text="CLICK"><span>WHITELIST</span></a>
+                        </div>
+                    </div>
+
+                    <div class="Englobebouttonfixe3">
+                        <div class="buttons3">
+                            <!--  <h1 class="h1boutton">Vous ne pourrez plus revenir sur vos pas ...</h1>
+                    <p class="pboutton">Cliquez pour passer à la suite</p>
+-->
+                            <a target="_blank" href="https://discord.com/invite/hNKweYZKAF" class="btn effect043" id="bouttondossier"
+                                data-sm-link-text="CLICK"><span>DISCORD</span></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

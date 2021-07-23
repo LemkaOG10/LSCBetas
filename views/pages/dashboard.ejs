@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/css/error.css">
+    <link type="text/css" rel="stylesheet" href="/css/header.css">
+    <link type="text/css" rel="stylesheet" href="/css/navigation.css">
+    <link type="text/css" rel="stylesheet" href="/css/dashboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="/image/icons/LS_Criminal_Logo.ico" />
+    <title>LS Criminal - Accueil</title>
+</head>
+
+<body class="background">
+
+    <!-- Message d'erreur / success -->
+
+    <%- include('../partials/error'); %>
+
+    <!-- Header -->
+
+    <%- include('../partials/header'); %>
+
+        <!-- Navigation -->
+
+        <%- include('../partials/navigation'); %>
+
+            <!-- Page -->
+
+            <div class="centremilieu">
+
+                <%- include('../partials/navigation_superficielle'); %>
+
+                    <div class="contient_div">
+                        <div class="nav flex-column etapes container "
+                            style="padding: 0px; border-radius: 10px;">
+
+                            <a class="nav-link container_title"
+                                style="padding: 0px; display: flex; align-items: center; justify-content: center;"
+                                href="#">
+                                <li class="nav-item nav-etapes"
+                                    style="margin: 0px;  display: flex; align-items: center; justify-content: center;">
+
+                                    <div class="container_icone_etapes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="175%" height="175%"
+                                            fill="currentColor" class="bi bi-bar-chart-steps icone" viewBox="0 0 16 16">
+                                            <path
+                                                d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0zM2 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1z" />
+                                        </svg>
+                                    </div>
+
+                                    <div class="nav_text_etapes">
+                                        <div class="container_etapes_text">
+                                            <span class="Title_etapes" style="font-size: 135%; color: #1cceff;">
+                                                Suivez ces étapes
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="statut_etapes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="175%" height="175%"
+                                            fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16"
+                                            style="color: white">
+                                            <path
+                                                d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                                        </svg>
+                                    </div>
+
+                                </li>
+                            </a>
+
+                            <a class="nav-link"
+                                style="padding: 0px; display: flex; align-items: center; justify-content: center;"
+                                href="/redirect">
+                                <li class="nav-item nav-etapes"
+                                    style="margin: 0px;  display: flex; align-items: center; justify-content: center;">
+
+                                    <div class="container_icone_etapes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            fill="currentColor" class="bi bi-house-door icone" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+                                        </svg>
+                                    </div>
+
+                                    <div class="nav_text_etapes">
+                                        <div class="container_etapes_text">
+                                            Lier son compte discord
+                                        </div>
+                                    </div>
+
+                                    <div class="statut_etapes">
+                                        <img src="/image/Loading.gif" class="icone_statut_etapes">
+                                    </div>
+
+                                </li>
+                            </a>
+
+                            <a class="nav-link"
+                                style="padding: 0px; display: flex; align-items: center; justify-content: center;"
+                                href="#">
+                                <li class="nav-item nav-etapes"
+                                    style="margin: 0px;  display: flex; align-items: center; justify-content: center;">
+
+                                    <div class="container_icone_etapes">
+                                        <svg xmlns="http://www.w3.org/2000/svg"  width="15" height="15"
+                                            fill="currentColor" class="bi bi-person icone" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                                        </svg>
+                                    </div>
+
+                                    <div class="nav_text_etapes">
+                                        <div class="container_etapes_text">
+                                            Réussir son questionnaire
+                                        </div>
+                                    </div>
+
+                                    <div class="statut_etapes">
+                                        <img src="/image/Loading.gif" class="icone_statut_etapes">
+                                    </div>
+                                </li>
+                            </a>
+
+                            <a class="nav-link"
+                                style="padding: 0px; display: flex; align-items: center; justify-content: center;"
+                                href="#">
+                                <li class="nav-item nav-etapes"
+                                    style="margin: 0px;  display: flex; align-items: center; justify-content: center;">
+
+                                    <div class="container_icone_etapes">
+                                        <svg xmlns="http://www.w3.org/2000/svg"  width="15" height="15"
+                                            fill="currentColor" class="bi bi-pencil-square icone" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                        </svg>
+                                    </div>
+
+                                    <div class="nav_text_etapes">
+                                        <div class="container_etapes_text">
+                                            Envoyer son dossier
+                                        </div>
+                                    </div>
+
+                                    <div class="statut_etapes">
+                                        <img src="/image/Loading.gif" class="icone_statut_etapes">
+                                    </div>
+
+                                </li>
+                            </a>
+
+                            <a class="nav-link"
+                                style="padding: 0px; display: flex; align-items: center; justify-content: center; border-bottom: 0px; border-radius: 0% 0% 10px 10px;"
+                                href="#">
+                                <li class="nav-item nav-etapes"
+                                    style="margin: 0px;  display: flex; align-items: center; justify-content: center;">
+
+                                    <div class="container_icone_etapes">
+                                        <svg xmlns="http://www.w3.org/2000/svg"  width="15" height="15"
+                                            fill="currentColor" class="bi bi-archive-fill icone" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z" />
+                                        </svg>
+                                    </div>
+
+                                    <div class="nav_text_etapes">
+                                        <div class="container_etapes_text">
+                                            Attribution du rôle discord
+                                        </div>
+                                    </div>
+
+                                    <div class="statut_etapes">
+                                        <img src="/image/Loading.gif" class="icone_statut_etapes">
+                                    </div>
+
+                                </li>
+                            </a>
+
+                        </div>
+
+                        <div class="container_discord_full" href="#">
+
+                            <a class="container_title_discord" href="/redirect">
+                                <span style="margin-left: 15px; color: white;">
+                                    Discord
+                                </span>
+                            </a >
+
+                            <a class="container_discord" href="/redirect">
+
+
+                                <div class="container_discord_text">
+
+                                <div class="container_icone_discord">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor"
+                                        class="bi bi-discord" viewBox="0 0 16 16" style="color: white;">
+                                        <path
+                                            d="M6.552 6.712c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888.008-.488-.36-.888-.816-.888zm2.92 0c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888s-.36-.888-.816-.888z" />
+                                        <path
+                                            d="M13.36 0H2.64C1.736 0 1 .736 1 1.648v10.816c0 .912.736 1.648 1.64 1.648h9.072l-.424-1.48 1.024.952.968.896L15 16V1.648C15 .736 14.264 0 13.36 0zm-3.088 10.448s-.288-.344-.528-.648c1.048-.296 1.448-.952 1.448-.952-.328.216-.64.368-.92.472-.4.168-.784.28-1.16.344a5.604 5.604 0 0 1-2.072-.008 6.716 6.716 0 0 1-1.176-.344 4.688 4.688 0 0 1-.584-.272c-.024-.016-.048-.024-.072-.04-.016-.008-.024-.016-.032-.024-.144-.08-.224-.136-.224-.136s.384.64 1.4.944c-.24.304-.536.664-.536.664-1.768-.056-2.44-1.216-2.44-1.216 0-2.576 1.152-4.664 1.152-4.664 1.152-.864 2.248-.84 2.248-.84l.08.096c-1.44.416-2.104 1.048-2.104 1.048s.176-.096.472-.232c.856-.376 1.536-.48 1.816-.504.048-.008.088-.016.136-.016a6.521 6.521 0 0 1 4.024.752s-.632-.6-1.992-1.016l.112-.128s1.096-.024 2.248.84c0 0 1.152 2.088 1.152 4.664 0 0-.68 1.16-2.448 1.216z" />
+                                    </svg>
+                                </div>
+
+                                <div style="position: static; display: flex; align-items: center; justify-content: center; margin-left: 15px; margin-right: 15px; color: white;">
+                                    Lier son compte discord
+                                </div>
+
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+            </div>
+            </div>
+
+            <script src="/js/dashboard.js"></script>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script>
+            <script nomodule src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"> </script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+                integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+                crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+                integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+                integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>

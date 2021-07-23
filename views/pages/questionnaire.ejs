@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/css/header.css">
+    <link type="text/css" rel="stylesheet" href="/css/navigation.css">
+    <link type="text/css" rel="stylesheet" href="/css/questionnaire.css">
+    <link type="text/css" rel="stylesheet" href="/css/error.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="/image/icons/LS_Criminal_Logo.ico" />
+    <title>LS Criminal - Questionnaire</title>
+</head>
+
+<body class="background">
+
+    <!-- Message d'erreur / success -->
+
+    <%- include('../partials/error'); %>
+
+    <!-- Header -->
+
+    <%- include('../partials/header'); %>
+
+        <!-- Navigation -->
+
+        <%- include('../partials/navigation'); %>
+
+            <div class="centremilieu">
+
+                <%- include('../partials/navigation_superficielle'); %>
+
+                    <!-- 1ère Parti du questionnaire affiché (cf questionnaire.js) -->
+
+                    <div class="fondformulaire">
+                        <div class="formulaire">
+                            <form class="wrap" method="POST">
+
+                                <!-- 1er block de question -->
+
+                                <div class="question1">
+                                    <div class="ecriturequestion1"> → Je suis un avocat, on me propose de faire une
+                                        supérette pour
+                                        passer le temps :
+                                    </div>
+
+                                    <label for="reponse1">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse1" id="reponse1" />
+                                            <div class="question">
+                                                J'appel le père de Swyrm pour savoir si il veut participer
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse2" id="reponse2" />
+                                            <div class="question">
+                                                Je refuse et je contact le LSPD, pour arrêter le Malfrat
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse3">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse3" id="reponse3" />
+                                            <div class="question">
+                                                Vasy, j'y vais de toute façon je vais démissionner
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse4">
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse4" id="reponse4" />
+                                            <div class="question">
+                                                Il est 4h du matin, on peut s'amuser un peu
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <!-- 2ème block de question -->
+
+                                <div class="question1">
+                                    <div class="ecriturequestion1"> → Choisissez les zones safes :
+                                    </div>
+
+                                    <label for="reponse5">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse5" id="reponse5" />
+                                            <div class="question">
+                                                La chambre de la mère à Ylan / Le comico / L'aéroport
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse6">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse6" id="reponse6" />
+                                            <div class="question">
+                                                Comissariat / Hôpital / Parking
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse7">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse7" id="reponse7" />
+                                            <div class="question">
+                                                Comissariat / Hôtel de ville / Hôpital
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+
+                                    <label for="reponse8">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse8" id="reponse8" />
+                                            <div class="question">
+                                                Supérette / Groove Street / Hôpital
+                                            </div>
+                                        </div>
+
+                                    </label>
+                                </div>
+
+                                <!-- 3ème block de question -->
+
+                                <div class="question1">
+                                    <div class="ecriturequestion1"> → Je me suis fais écraser par une voiture, le
+                                        medecin me prescrit
+                                        2 ATA et m'interdit de rouler :
+                                    </div>
+
+                                    <label for="reponse9">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse9" id="reponse9" />
+                                            <div class="question">
+                                                Je lui dis que je vais bien et je lui met un hight-kick pour lui prouver
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse10">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse10" id="reponse10" />
+                                            <div class="question">
+                                                Je prend en compte son diagnostic, j'appel un Taxi.
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse11">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse11" id="reponse11" />
+                                            <div class="question">
+                                                Je cours jusqu'au centre-ville rejoindre mes amis
+                                            </div>
+                                        </div>
+
+
+                                    </label>
+
+                                    <label for="reponse12">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse12" id="reponse12" />
+                                            <div class="question">
+                                                Je vole un véhicule et je dirais que je conduit avec les palettes au
+                                                volant
+                                            </div>
+                                        </div>
+
+                                    </label>
+                                </div>
+
+                                <!-- 4ème block de question -->
+
+                                <div class="question1">
+                                    <div class="ecriturequestion1"> → Je me fais braquer par trois personnes masqués,
+                                        plus tard je
+                                        reconnais la voix de l'un d'eux :
+                                    </div>
+
+                                    <label for="reponse13">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse13" id="reponse13" />
+                                            <div class="question">
+                                                Nique sa mère, c'est lui la voix est identique, Je le soulève
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse14">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse14" id="reponse14" />
+                                            <div class="question">
+                                                Je n'ai pas assez d'information pour le reconnaitre, je trace ma route
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse15">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse15" id="reponse15" />
+                                            <div class="question">
+                                                Je lui demande où il était il y'a 15 minutes
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse16">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse16" id="reponse16" />
+                                            <div class="question">
+                                                J'appel la police pour signaler que mon agresseur est devant moi
+                                            </div>
+                                        </div>
+
+                                    </label>
+                                </div>
+
+                                <!-- 5ème block de question -->
+
+                                <div class="question1">
+                                    <div class="ecriturequestion1"> → Je suis un agent du LSPD, je reçois une alerte
+                                        "vente de drogue"
+                                        :
+                                    </div>
+
+                                    <label for="reponse17">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse17" id="reponse17" />
+                                            <div class="question">
+                                                Je me rend sur les lieux, le premier que je trouve en train de courrir
+                                                je
+                                                l'arrête
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse18">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse18" id="reponse18" />
+                                            <div class="question">
+                                                Je me rend sur les lieux, le premier membre de gang que je trouve je
+                                                l'arrête
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse19">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse19" id="reponse19" />
+                                            <div class="question">
+                                                Je me rend pas sur les lieux, je continue mon RP couple
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse20">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse20" id="reponse20" />
+                                            <div class="question">
+                                                Je me rend sur les lieux discrètement, et je recherche un flagran-délit
+                                            </div>
+                                        </div>
+
+                                    </label>
+                                </div>
+
+                                <!-- 6ème block de question -->
+
+                                <div class="question1">
+                                    <div class="ecriturequestion1"> → Je désire vendre une voiture, la personne en face
+                                        de moi me
+                                        donne de l'argent sale :
+                                    </div>
+
+                                    <label for="reponse21">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse21" id="reponse21" />
+                                            <div class="question">
+                                                Il essaie de m'arnaquer, je lui fais la réflexion
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse22">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse22" id="reponse22" />
+                                            <div class="question">
+                                                Je lui demande d'où provient l'argent
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse23">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse23" id="reponse23" />
+                                            <div class="question">
+                                                Je lui dis de rajouter plus d'argent
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse24">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse24" id="reponse24" />
+                                            <div class="question">
+                                                Je ne dis rien et je lui vend mon véhicule
+                                            </div>
+                                        </div>
+
+                                    </label>
+                                </div>
+
+                                <!-- Boutton sous le questionnaire -->
+
+                                <div class="Englobebouttonfixe">
+
+                                    <a class="btn effect04" id="bouttonsuite" data-sm-link-text="CLICK"
+                                        target="_blank"><span>SUITE</span></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- 2ème Parti du questionnaire caché (cf questionnaire.js) -->
+                    <div class="fondformulaire2">
+                        <div class="formulaire2">
+
+                            <div class="resultatquestionnaire">
+
+                                <div class="resultattext">
+                                    Vous avez échoué ! Votre note est de : Vous pouvez réessayer dans 6h !
+                                </div>
+
+                                <div class="Englobebouttonfixe3">
+                                    <div class="buttons3">
+                                        <!--  <h1 class="h1boutton">Vous ne pourrez plus revenir sur vos pas ...</h1>
+                        <p class="pboutton">Cliquez pour passer à la suite</p>
+-->
+                                        <a href="dossier" class="btn effect043" id="bouttondossier"
+                                            data-sm-link-text="CLICK"><span>DOSSIER</span></a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <form class="wrap" method="POST">
+
+                                <!-- 1er block de question -->
+
+                                <div class="question1">
+                                    <div class="ecriturequestion1"> → Qu'est-ce que le Métagaming ?
+                                    </div>
+
+                                    <label for="reponse1_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse1_2" id="reponse1_2" />
+                                            <div class="question">
+                                                Prendre des informations HRP et les utiliser en RP.
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse2_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse2_2" id="reponse2_2" />
+                                            <div class="question">
+                                                Prendre des informations RP et les utiliser en HRP
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse3_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse3_2" id="reponse3_2" />
+                                            <div class="question">
+                                                Ne pas écouter les informations en radio
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse4_2">
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse4_2" id="reponse4_2" />
+                                            <div class="question">
+                                                Avoir une manière de jouer désastreuse
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <!-- 2ème block de question -->
+
+                                <div class="question1">
+                                    <div class="ecriturequestion1"> → Choisissez les zones interdites :
+                                    </div>
+
+                                    <label for="reponse5_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse5_2" id="reponse5_2" />
+                                            <div class="question">
+                                                Binco / Barrage / Héliport
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse6_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse6_2" id="reponse6_2" />
+                                            <div class="question">
+                                                Tarmac Aéroport / Plage / Parking
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse7_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse7_2" id="reponse7_2" />
+                                            <div class="question">
+                                                Comissariat / Hôtel de ville / Hôpital
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+
+                                    <label for="reponse8_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse8_2" id="reponse8_2" />
+                                            <div class="question">
+                                                Base militaire / Tarmac Aéroport / Port Merrywather
+                                            </div>
+                                        </div>
+
+                                    </label>
+                                </div>
+
+                                <!-- 3ème block de question -->
+
+                                <div class="question1">
+                                    <div class="ecriturequestion1"> → On m'a mis dans le coma à l'aide d'une arme à feu,
+                                        je
+                                        me
+                                        réveil :
+                                    </div>
+
+                                    <label for="reponse9_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse9_2" id="reponse9_2" />
+                                            <div class="question">
+                                                J'oubli les raisons et la personne qui m'a coma
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse10_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse10_2"
+                                                id="reponse10_2" />
+                                            <div class="question">
+                                                J'oubli les raisons mais pas la personne qui m'a coma
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse11_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse11_2"
+                                                id="reponse11_2" />
+                                            <div class="question">
+                                                J'ai une Go-Pro, je sais ce qui m'est arrivé
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse12_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse12_2"
+                                                id="reponse12_2" />
+                                            <div class="question">
+                                                Je me déconnecte et je quitte le server
+                                            </div>
+                                        </div>
+
+                                    </label>
+                                </div>
+
+                                <!-- 4ème block de question -->
+
+                                <div class="question1">
+                                    <div class="ecriturequestion1"> → Je suis membre du LSHD, je veux devenir ripoux :
+                                    </div>
+
+                                    <label for="reponse13_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse13_2"
+                                                id="reponse13_2" />
+                                            <div class="question">
+                                                J'ai juste à informer ma hiérarchie de mon engagement
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse14_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse14_2"
+                                                id="reponse14_2" />
+                                            <div class="question">
+                                                Je fais une demande au Staff de LS Criminal
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse15_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse15_2"
+                                                id="reponse15_2" />
+                                            <div class="question">
+                                                Je deviens ripou en cachette
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse16_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse16_2"
+                                                id="reponse16_2" />
+                                            <div class="question">
+                                                Je deviens ripou hors mon service
+                                            </div>
+                                        </div>
+
+                                    </label>
+                                </div>
+
+                                <!-- 5ème block de question -->
+
+                                <div class="question1">
+                                    <div class="ecriturequestion1"> → Le daron de kyk's ne sait pas appuyer sur quelle
+                                        touche pour
+                                        ouvrir le menu :
+                                    </div>
+
+                                    <label for="reponse17_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse17_2"
+                                                id="reponse17_2" />
+                                            <div class="question">
+                                                Je lui dis de venir sur discord pour lui expliqué
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse18_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse18_2"
+                                                id="reponse18_2" />
+                                            <div class="question">
+                                                Je lui envoie un message sur discord sans l'avertir de quelconque
+                                                manière
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse19_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse19_2"
+                                                id="reponse19_2" />
+                                            <div class="question">
+                                                Je lui dis de regarder sur Watsapp
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse20_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse20_2"
+                                                id="reponse20_2" />
+                                            <div class="question">
+                                                Va te faire enculer débrouille toi ma gueule
+                                            </div>
+                                        </div>
+
+                                    </label>
+                                </div>
+
+                                <!-- 6ème block de question -->
+
+                                <div class="question1">
+                                    <div class="ecriturequestion1"> → J'ai perdu une cargaison a cause d'un bug :
+                                    </div>
+
+                                    <label for="reponse21_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse21_2"
+                                                id="reponse21_2" />
+                                            <div class="question">
+                                                Je demande un remboursement au staff
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse22_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse22_2"
+                                                id="reponse22_2" />
+                                            <div class="question">
+                                                Je ne serai pas remboursé, j'aurai dû être moin gourmand
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse23_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse23_2"
+                                                id="reponse23_2" />
+                                            <div class="question">
+                                                Je demande de l'aide à quelqu'un
+                                            </div>
+                                        </div>
+
+                                    </label>
+
+                                    <label for="reponse24_2">
+
+                                        <div class="content_question">
+                                            <input type="checkbox" name="quizz[]" value="reponse24_2"
+                                                id="reponse24_2" />
+                                            <div class="question">
+                                                Je dis au LSPD de me rembourser
+                                            </div>
+                                        </div>
+
+                                    </label>
+                                </div>
+
+                                <!-- Boutton sous le questionnaire -->
+
+                                <div class="Englobebouttonfixe">
+                                    <!--  <h1 class="h1boutton">Vous ne pourrez plus revenir sur vos pas ...</h1>
+                            <p class="pboutton">Cliquez pour passer à la suite</p>
+    -->
+                                    <a class="btn effect04" id="bouttonterminer" data-sm-link-text="CLICK"
+                                        target="_blank"><span>TERMINER</span></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+            <script src="/js/questionnaire.js"></script>
+</body>
+
+</html>

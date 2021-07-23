@@ -1,0 +1,133 @@
+ /*
+  ==================================================================
+                HEADER NAVIGATION SUPÉRIEUR
+  ==================================================================
+  */
+  
+  /* Header qui délimite les divs qui seront à l'intérieur */
+  
+  .titre0
+  {
+    width: 100%;
+    height: 64px;
+    color: #7289da;
+    background-color: #212529;
+    border-bottom: 1px solid #99aab5;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 34;
+    overflow: hidden;
+    top: 0px;
+  }
+  
+  /* Taille de la div titre0lscriminal */
+  
+  .c-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+    margin-left: 5%;
+  
+  }
+  
+  /* Taille de la div titre0lscriminal */
+  
+  .c-title_logo_lscriminal {
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+  
+  }
+  
+  /* Titre LS Criminal dans le Header ainsi que sa fonction Hover et sa fonction qui enlève l'effet lien */
+  
+  .titre0lscriminal
+  {
+    display: flex;
+    align-items: center;
+    font-family: "Advent Pro", "Arial Black";
+    font-size: clamp(12px, 2vh, 5px);
+    color: #1cceff;
+    opacity: 0.6;
+  }
+  
+  .titre0lscriminal:hover
+  {
+    opacity: 1;
+  }
+  
+  .titre0lscriminallink {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+  }
+  
+  /* Retrait de la liste ordonné l-social*/
+  
+  .l-social {
+    width: 40%;
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 2%;
+  
+  }
+  
+  .container_social {
+    margin-right: 10%;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Image LS Criminal disponible dans le Header ainsi que sa Fonction Hover */
+  
+  img.logo0
+  {
+    width : 25px; 
+    height: 25px;
+    opacity: 0.5;
+    margin-left: 100%;
+    
+  }
+  
+  .logo0:hover
+  {
+    opacity: 1;
+    margin-left: 100%;
+  }
+  
+  /* Image Twitch disponible dans le Header ainsi que sa Fonction Hover */
+  
+  .icone_social
+  {
+    position: static;
+    margin-right: 100%;
+    opacity: 0.5;
+    width : 20px; 
+    height: 20px;
+  }
+  
+  .icone_social:hover
+  {
+    opacity: 1;
+  }
+
+  .icone_deconnexion
+  {
+    display: flex;
+    position: static;
+    margin-left: 10%;
+    opacity: 1;
+    width : 25px; 
+    height: 25px;
+  }
+  
+  .icone_deconnexion:hover
+  {
+    opacity: 1;
+  }
+  

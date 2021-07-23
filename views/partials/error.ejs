@@ -1,0 +1,80 @@
+<% if(error && error.length> 0) { %>
+    <div class="fondalerte">
+        <div class="fonderror">
+
+            <div class="texterror">
+                <%= error %>
+            </div>
+
+            <div class="buttonerrorfermer">
+
+                <a class="button_modified user_text" id="open_change_password" href="#">
+                    <div class="user_text">
+                        Fermer
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+    
+    <script>
+
+        function closepoche() {
+
+            const fondalerte = document.querySelector(".fondalerte");
+
+            // Ici on ferme la navigation latérale
+
+            fondalerte.addEventListener("click", function () {
+                console.log("click")
+                fondalerte.style.display = "none";
+            });
+        };
+
+        closepoche();
+
+    </script>
+
+    <% } %>
+
+        <% if(success && success.length> 0) { %>
+            <div class="fondalerte2">
+                <div class="fonderror">
+
+                    <div class="textsuccess">
+                        <%= success %>
+                    </div>
+
+                    <div class="buttonerrorfermer">
+
+                        <a class="button_modified user_text" id="open_change_password" href="#">
+                            <div class="user_text">
+                                Fermer
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <script>
+
+                function closepoche2() {
+                    const fondalerte = document.querySelector(".fondalerte");
+                    const fondalerte2 = document.querySelector(".fondalerte2");
+
+                    fondalerte2.addEventListener("click", function () {
+                        console.log("click")
+                        fondalerte.style.display = "none";
+                        fondalerte2.style.display = "none";
+                    });
+                };
+
+                closepoche2();
+
+            </script>
+
+            <% } %>

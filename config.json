@@ -1,0 +1,18 @@
+  
+{
+    "port": "8080",
+    "oauth2": {
+        "redirect_uri": "http://localhost:8080/auth/redirect", 
+        "client_id": "803793792695664660",
+        "secret": "QuKbOa1jHvFjU1gRa774fiX_BlZDI8Dr",
+        "scopes": ["identify", "guilds"]
+    },
+    "session": {
+        "secret": "youshallnotpass",
+        "cookie": {
+            "maxAge": 86400000
+        },
+        "resave": true,
+        "saveUninitialized": false
+    }
+}

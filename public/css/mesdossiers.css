@@ -1,0 +1,885 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Déclaration des polices importer */
+
+@font-face
+{
+  font-family: "Advent Pro";
+  src: url("../police/AdventPro-Bold.ttf");
+}
+ 
+@font-face
+{ 
+  font-family: "Metropolis";
+  src: url("../police/Metropolis-Light.otf");
+}
+
+input
+{
+  width: 0.8vw;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+  
+/*
+==================================================================
+              NAVIGATION GAUCHE
+==================================================================
+*/
+
+/* Permet d'aligner les deux divs principaux */
+
+/* Div qui englobe la div superficielle de la navigation et celle de la page */
+
+.centremilieu {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: 64px;
+  z-index: -1;
+  overflow: auto;
+}
+
+.centrage {
+  position: static;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 665px;
+}
+
+/*
+==================================================================
+              BLOCK MES DOSSIERS DOSSIER
+==================================================================
+*/
+
+/* Button modified */
+
+.container_changed {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 3%;
+  height: 50px;
+  width: 40%;
+}
+
+.button_modified {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 33px;
+  width: 100px;
+  border-radius: 3px;
+  background-color: #0080a0;
+  color: white;
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+.button_modified:hover {
+  opacity: 1;
+}
+
+/* Table Styles */
+
+.table-wrapper{
+  opacity: 1;
+  margin: 30px 70px 70px;
+  box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.fl-table {
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+}
+
+.fl-table td, .fl-table th {
+  text-align: center;
+  padding: 8px;
+}
+
+.fl-table td {
+  border-right: 1px solid #f8f8f8;
+  font-size: 12px;
+}
+
+.fl-table thead th {
+  color: #ffffff;
+  background: #0080a0;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+  color: #ffffff;
+  background: #2f3136;
+}
+
+.fl-table tr:nth-child(even) {
+  background: #e0e3e7;
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {
+  .fl-table {
+      display: block;
+      width: 100%;
+  }
+
+  .table-wrapper {
+    margin-right: 10px;
+    margin-left: 2px;
+  }
+
+  .table-wrapper:before{
+      content: "Naviguez horizontallement >";
+      display: block;
+      text-align: right;
+      font-size: 11px;
+      color: white;
+      padding: 0 0 10px;
+  }
+  .fl-table thead, .fl-table tbody, .fl-table thead th {
+      display: block;
+  }
+  .fl-table thead th:last-child{
+      border-bottom: none;
+  }
+  .fl-table thead {
+      float: left;
+  }
+  .fl-table tbody {
+      width: auto;
+      position: relative;
+      overflow-x: auto;
+  }
+  .fl-table td, .fl-table th {
+      padding: 20px .625em .625em .625em;
+      height: 60px;
+      vertical-align: middle;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      overflow-y: auto;
+      width: 120px;
+      font-size: 13px;
+      text-overflow: ellipsis;
+  }
+  .fl-table thead th {
+      text-align: left;
+      border-bottom: 1px solid #f7f7f9;
+  }
+  .fl-table tbody tr {
+      display: table-cell;
+  }
+  .fl-table tbody tr:nth-child(odd) {
+      background: none;
+  }
+  .fl-table tr:nth-child(even) {
+      background: transparent;
+  }
+  .fl-table tr td:nth-child(odd) {
+      background: #F8F8F8;
+      border-right: 1px solid #E6E4E4;
+  }
+  .fl-table tr td:nth-child(even) {
+      border-right: 1px solid #E6E4E4;
+  }
+  .fl-table tbody td {
+      display: block;
+      text-align: center;
+  }
+}
+
+/* Statut de la candidature */
+
+.statut {
+  opacity: 0.5;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #0080a0;
+}
+
+.statut:hover {
+  opacity: 1;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #0080a0;
+}
+
+/* Voir Background */ 
+
+.voir_background {
+  opacity: 0.5;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #15253a;
+}
+
+.voir_background:hover {
+  opacity: 1;
+}
+
+/* Information Dépot de dossier */ 
+
+.center_folder_info {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.center_folder_send {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.scroll_center {
+  position: static;
+  display: flex;
+  overflow-y: scroll;
+  width: 100%;
+  height: 725px;
+}
+
+.container_dossier_info {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+  width: 445px;
+  height: 400px;
+  margin-left: 35%;
+  background-color: #414449;
+  border-radius: 10px;
+}
+
+.header_container_dossier_info {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.title_dossier_info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  color: white;
+  font-weight: bold;
+
+}
+
+.container_close {
+  position: absolute;
+  top: 16px;
+  right: 35px;
+}
+
+.bi-x-lg:hover {
+  color: #ffffff;
+}
+
+.paragraphe {
+  position: static;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: normal;
+  width: 100%;
+  height: 10%;
+  color: white;
+  margin-top: 15px;
+}
+
+.footer_container_change_username {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 30%;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #2f3136;
+  text-decoration: none;
+}
+
+.button_change {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #4f545c;
+  opacity: 0.7;
+  font-size: 12px;
+  margin-right: 15px;
+  color: white;
+}
+
+.button_change:hover {
+  opacity: 1;
+}
+
+/* Dépot de dossier */ 
+
+.container_form {
+  position: static;
+  display: flex;
+  margin-top: 25px;
+  margin-left: 30%;
+  margin-right: 30%;
+  height: 600px;
+  width: 445px;
+  background-color: #414449;
+  z-index: 1;
+}
+
+.container_change_username {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  width: 445px;
+  height: 100%;
+  left: 40%;
+  top: 100px;
+  border-radius: 10px;
+  z-index: 3;
+}
+
+.container_inpute {
+  position: static;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.container_input_email_change {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 35px;
+  height: 50px;
+}
+
+.title_change_username {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  color: white;
+  font-weight: bold;
+
+}
+
+.container_close {
+  position: absolute;
+  right: 35px;
+}
+
+.input_email_change, .input_password_change {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#name, #password, #prenomrp, #nomrp, #dateofbirth, #gdocs, #gdocslead {
+  position: static;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 0px 10px 0px 10px;
+  width: 80%;
+  height: 100%;
+  background-color: #303338;
+  border: 1px solid #2e2c2c;
+  border-radius: 5px;
+  color: white;
+}
+
+#name:focus, #password:focus, #prenomrp:focus, #nomrp:focus, #dateofbirth:focus, #gdocs:focus, #gdocslead:focus  { 
+  outline: none !important;
+  border-color: #1cceff;
+}
+
+.change_email_text, .change_password_text {
+  position: static;
+  display: flex;
+  align-items: flex-end;
+  margin: 5px 0px;
+  width: 80%;
+  height: 20px;
+  color: #8e9297;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 46px;
+
+}
+
+.footer_container_send_folder {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 75px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #2f3136;
+  text-decoration: none;
+}
+
+.button_change {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #4f545c;
+  opacity: 0.7;
+  font-size: 12px;
+  margin-right: 15px;
+  color: white;
+}
+
+.button_change:hover {
+  opacity: 1;
+}
+
+.annuler {
+  margin: 0px 25px 0px 0px;
+  color: white;
+}
+
+/* Information Dépot de dossier */ 
+
+.center_background_info {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+/* Ipad Pro */
+
+@media screen and (max-width: 1024px) {
+
+  .container_dossier_info {
+    margin-left: 25%;
+  }
+
+  .container_close {
+    right: 20px;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+/* Ipad */
+
+@media screen and (max-width: 880px) {
+
+  .container_dossier_info {
+    margin-left: 20%;
+  }
+
+}
+
+@media screen and (max-width: 847px) {
+
+}
+
+@media screen and (max-width: 843px) {
+
+}
+
+@media screen and (max-width: 843px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  
+  .container_form {
+  margin-left: 15%;
+  margin-right: 30%;
+  width: 445px;
+  }
+
+  .container_dossier_info {
+    margin-left: 15%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .change_password_text, .change_email_text {
+    margin-left: 40px;
+
+  }
+
+  .container_form {
+    margin-left: 10%;
+    margin-right: 30%;
+    width: 375px;
+  }
+
+  .container_dossier_info {
+    margin-left: 5%;
+  }
+
+}
+
+/* Surface Duo */
+
+@media screen and (max-width: 530px) {
+
+  .container_dossier_info {
+    margin-left: 3%;
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+
+  .container_dossier_info {
+    margin-left: 5%;
+    width: 375px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .container_form {
+    margin-left: 5%;
+    margin-right: 30%;
+    }
+
+}
+
+@media screen and (max-width: 465px) {
+
+  .change_password_text, .change_email_text {
+    margin-left: 32px;
+  }
+
+  .container_form {
+    margin-left: 10%;
+    margin-right: 30%;
+    width: 300px;
+    }
+
+  .container_dossier_info {
+    margin-left: 3%;
+    width: 375px;
+  }
+
+}
+
+@media screen and (max-width: 443px) {
+
+  .container_dossier_info {
+    margin-left: 5%;
+    width: 325px;
+  }
+
+  .title_dossier_info {
+    font-size: 12px;
+  }
+
+}
+
+/* Iphone 6/7/8 Plus & Pixel 2 XL*/
+
+
+@media screen and (max-width: 414px) {
+
+}
+
+@media screen and (max-width: 405px) {
+
+  .change_password_text, .change_email_text {
+    margin-left: 32px;
+
+  }
+
+  .container_form {
+    margin-left: 5%;
+    margin-right: 30%;
+    width: 300px;
+    }
+
+  .container_dossier_info {
+    margin-left: 4%;
+    width: 300px;
+    height: 467px;
+  }
+
+  .title_dossier_info {
+    font-size: 12px;
+  }
+
+}
+
+/* Iphone X & Iphone 6/7/8 */
+
+@media screen and (max-width: 375px) {
+
+  .change_password_text, .change_email_text {
+    margin-left: 32px;
+
+  }
+
+  .container_form {
+    margin-left: 1%;
+    margin-right: 30%;
+    width: 300px;
+    }
+
+  .container_dossier_info {
+    margin-left: 1%;
+    width: 300px;
+    height: 467px;
+  }
+
+  .title_dossier_info {
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-height: 668px) {
+
+  .container_form {
+    height: 550px;
+  }
+
+}
+
+/* Moto G4 & Galaxy */
+
+@media screen and (max-width: 360px) {
+
+  .change_password_text, .change_email_text {
+    margin-left: 27px;
+
+  }
+
+  .container_form {
+    margin-left: 5%;
+    margin-right: 30%;
+    width: 250px;
+    }
+
+  .container_dossier_info {
+    margin-left: 2%;
+    width: 285px;
+    height: 467px;
+  }
+
+  .title_dossier_info {
+    font-size: 10px;
+  }
+
+}
+
+@media screen and (max-height: 641px) {
+
+  .fl-table td, .fl-table th {
+    text-align: center;
+    padding: 15px;
+    height: 55px;
+  }
+
+}
+
+/* Iphone 5/SE */
+
+@media screen and (max-width: 340px) {
+
+  .container_dossier_info {
+    margin-left: -1%;
+    width: 285px;
+    height: 467px;
+  }
+
+  .title_dossier_info {
+    font-size: 10px;
+  }
+
+}
+
+@media screen and (max-width: 338px) {
+
+  .container_dossier_info {
+    margin-left: 10%;
+    width: 200px;
+    height: 467px;
+  }
+
+  .title_dossier_info {
+    font-size: 10px;
+  }
+
+  .container_close {
+    top: 30px;
+  }
+
+}
+
+@media screen and (max-width: 325px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+  .title_change_username {
+    font-size: 12px;
+  }
+
+  .container_form {
+    margin-left: 5%;
+    margin-right: 30%;
+    width: 215px;
+    }
+
+  .container_dossier_info {
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 200px;
+    height: 467px;
+  }
+
+  .title_dossier_info {
+    font-size: 10px;
+  }
+
+  .container_close {
+    top: 30px;
+  }
+
+  .change_password_text, .change_email_text {
+    font-size: 10px;
+    margin-left: 23px;
+  }
+
+}
+
+@media screen and (max-height: 569px) {
+
+  .container_form {
+    height: 475px;
+  }
+
+}
+
+/* Galaxy Fold */
+
+@media screen and (max-width: 280px) {
+
+  .container_dossier_info {
+    margin-top: 20px;
+    margin-left: 5%;
+    width: 200px;
+    height: 467px;
+  }
+
+  .change_password_text, .change_email_text {
+    margin-left: 23px;
+    font-size: 10px;
+
+  }
+
+  .container_form {
+    margin-left: 5%;
+    margin-right: 30%;
+    width: 200px;
+    height: 550px;
+    }
+
+    .title_change_username {
+      font-size: 12px;
+    }
+
+  .button_change {
+    width: 65px;
+  }
+
+  .annuler {
+    font-size: 12px;
+    margin-right: 50px;
+  }
+  
+}
+
+@media screen and (max-width: 259px) {
+
+  .container_form {
+    margin-left: 1%;
+    }
+
+    .container_dossier_info {
+      margin-left: 1%;
+    }
+
+
+}
+
+@media screen and (max-height: 654px) {
+
+  .fl-table td, .fl-table th {
+    text-align: center;
+    padding: 15px;
+    height: 58px;
+    width: 100px;
+  }
+
+}
+
+
